@@ -1,0 +1,250 @@
+
+/*OPERACIONES PARA PAGINAS DE VAJILLA, DECO Y PRODUCTOS*/
+
+/*VARIABLES*/
+
+$verdeOscuro: #79A4A4;
+    
+$grisOscuro: #40454f;
+
+$grisMedio: #A6A6A6;
+
+$grisClaro: #d1d4dc;
+    
+$blanco: #f3f4f6;
+    
+$verdeAqua: #C2D6D6;
+ 
+$coral:coral;
+
+
+/*OPERACIONES SIMPLES*/
+
+$galeriaProductos:768px;
+$cuadrante: 100px;
+
+
+.card1 {
+    width: $cuadrante*2;
+    height: $cuadrante*3;
+}
+
+.card2 {
+    width: $cuadrante*2;
+    height:$cuadrante*3+5;
+}
+
+
+/*CONDICIONALES PARA MEDIDAS DE PANTALLA*/
+
+.sectionGaleria {
+    @if $galeriaProductos ==768px {
+        .card1 {width: $cuadrante*3+50;
+                height: $cuadrante*2+60;}
+        .card2 {width: $cuadrante*7;
+                height: $cuadrante*2;}
+    } @else if $galeriaProductos <=768px {
+        .card1 {width: $cuadrante*3;
+                height: $cuadrante*3;}
+        .card2 {width: $cuadrante*3;
+                height: $cuadrante*3+20;}
+    } @else if $galeriaProductos >=768px {
+        .card1 {width: $cuadrante*2+20;
+                height: $cuadrante*4;}
+        .card2 {width: $cuadrante*9;
+                height: $cuadrante*2;}
+        }
+    }
+
+/*CONDICIONALES PARA DESCUENTOS E INGRESOS DE PRODUCTOS*/
+
+$liquidacion: true;
+$porcentaje: 20;
+
+.off {
+    @if $liquidacion == false {
+        display:none;
+    } @else {
+        display:flex;
+    }
+}
+
+.off {
+    @if $porcentaje == 20 {
+        background-color:$coral;
+    }
+    @else if $porcentaje <= 20 {
+        background-color:mediumturquoise;
+    }
+    @else if $porcentaje >= 20 {
+        background-color:magenta;
+    }
+}
+
+.off {
+    flex-direction:inline-block;
+    float:right;
+    justify-content:center;
+    width:80px;
+    color:$blanco;
+    font-weight: lighter;
+    font-size:14px;
+}
+
+.off:hover {
+    color:$blanco;
+}
+
+
+$ingreso: true;
+
+.nuevo { 
+    @if $liquidacion == false {
+        display:none;
+    } @else {
+        display:flex;
+    }
+}
+
+.nuevo {
+    flex-direction:inline-block;
+    float:right;
+    justify-content:center;
+    width:80px;
+    color:$blanco;
+    background-color:teal;
+    font-weight:lighter;
+    font-size: 16px;
+}
+
+
+/*MIXINS PARA LAS CARDS*/
+
+@mixin margenes1 {
+    margin: 10px 5px 10px 5px;
+}
+
+@mixin margenesCostados {
+    margin-left:40px;
+    margin-right: 40px;
+}
+
+@mixin fondoOscuro {
+    background-color: $verdeOscuro;
+    color:$blanco;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+@mixin fondoClaro {
+    background-color: $blanco;
+    color:$grisOscuro;
+    font: size 25px;
+    text-shadow: $grisMedio;
+    height:45px;
+    text-align:center;
+}
+
+@mixin fondoMedio {
+    background-color:$verdeAqua;
+    color: $grisOscuro;
+    letter-spacing: 10px;
+    font-style: italic;
+    text-transform:uppercase;
+    font-size: 22px;
+    padding:5px;
+}
+
+.card-body{
+    @include fondoOscuro;
+}
+
+.card-diseno{
+    @extend .card-body;
+    display:flex;
+    flex-flow:row row nowrap;
+    justify-content: center;
+    min-height:20px;
+    text-transform: uppercase;
+    padding-top:5px;
+    font-size:20px;
+}
+
+.card {
+    @include margenes1;
+}
+
+.card-header {
+    @include fondoClaro;
+}
+
+.card-header--productos {
+    @include fondoMedio;
+    display:flex;
+    flex-direction: row nowrap;
+    justify-content: center;
+}
+
+.textoPrincipal {
+    @include margenesCostados;
+}
+
+.btn {
+    @extend .card;
+}
+
+.disenos {
+    display: flex;
+    flex-flow:column wrap;
+    justify-content:center;
+    margin-left: 40px;
+    margin-right:40px;
+}
+
+
+/*EACH*/
+
+@each $disenos in geometria, flora, totalcolor, franjas {
+    .#{$disenos}-card-body {
+        background-image:url('../media/#{$disenos}.jpg');
+        background-size:cover;
+        background-position: center;
+        min-height:250px;
+    }
+}
+
+/*FOR*/
+
+@for $boton-size from 1 through 3 {
+    .btn--#{$boton-size} {font-size:8px *$boton-size}
+}
+
+/*MAPS BOTONES*/
+
+$botones: (
+    info: #40454f,
+    especial: coral,
+    consulta: #A6A6A6,
+);
+
+$botonmargin: (
+    pequeno: 10px,
+    chico: 16px,
+    medio: 20px,
+    xl: 25px,
+    xxl: 40px,
+);
+
+@each $boton, $color in $botones {
+    .boton--#{$boton} {
+        background-color: $color;
+    }
+}
+
+@each $boton, $margin in $botonmargin {
+    .botonmargin--#{$boton} {
+        margin: $margin;
+    }
+}
+
+

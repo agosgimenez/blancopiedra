@@ -1,0 +1,664 @@
+
+/*ESTRUCTURA MOBILE FIRST*/
+
+.container {
+    padding: 0px;
+}
+
+.container-fluid {
+    padding: 0px;
+}
+
+/*------------variables------------*/
+
+
+$letraXl: 16px;
+
+$letraXxl: 24px;
+
+$letraSpace: 5px; 
+
+$oracionSpace: 20px;
+
+$palabraSpace: 8px;
+
+$spaceInputs: 15px;
+
+
+/*body*/
+
+body {
+    width: 100%;
+    background-image:url("../media/rockywall.png");
+}
+
+/*BEM HEADER*/
+
+.header {
+    width: 100%;
+    height: 60px;
+    min-height: 95px;
+    margin-top: 0px;
+    text-align: center;
+    background-color:#f3f4f6;
+    position: fixed;
+    z-index: 2;
+}
+
+.header__img__logo {
+    width:50px;
+    min-width: 100px;
+    transition: all 1s;
+}
+
+.header__img__logo:hover {
+    transform: scale(1.1,1.1);
+}
+
+
+@media only screen and (min-width:768px) {
+
+    .header {
+        width: 100%;
+        height: 130px;
+        min-height: 95px;
+        margin-top: 0px;
+        text-align: center;
+        background-color:#f3f4f6;
+        position: fixed;
+        z-index: 2;
+    }
+
+    .header__img__logo {
+        width:120px;
+        min-width: 100px;
+        transition: all 1s;
+    }
+}
+
+
+@media only screen and (min-width:1000px) {
+
+    .header {
+        width: 100%;
+        height: 190px;
+        margin-top: 0px;
+        text-align: center;
+        background-color:#f3f4f6;
+        position: fixed;
+        z-index: 2;
+    }
+
+    .header__img__logo {
+        width:180px;
+        min-width: 100px;
+        transition: all 1s;
+    }
+}
+/*--menu de navegacion--*/
+
+.navegacion {
+    height: 20px;
+    font-size: 12px;
+    color:#f3f4f6;
+    background-color: #40454f;
+    z-index:2;
+    text-align:center;
+    position:relative;
+    bottom: 10px;
+}
+
+@media only screen and (min-width:768px) {
+    
+    .navegacion {
+        height: 30px;
+        font-size: 12px;
+    }
+
+}
+
+@media only screen and (min-width:1000px) {
+
+    .navegacion {
+        height: 30px;
+        font-size: 16px;
+    }
+
+}
+
+.navegacion ul {
+    list-style-type: none;
+    justify-content: center;
+    align-content: center;
+}
+
+.menu  {
+    background-color:#40454f;
+    color:#f3f4f6;
+}
+
+.menu li  {
+    position:relative;
+    display: inline-block;
+}
+
+.menu li a {
+    padding-left:20px;
+    padding-right: 20px;
+}
+
+.subMenu {
+    width: 100%;
+    position:absolute;
+    top: 30px;
+    visibility:hidden;
+}
+
+.subMenu li {
+    width: 100%;
+    display:block;
+}
+
+.menu li:hover .subMenu {
+    display:block;
+    visibility:visible;
+}
+
+.subMenu li a {
+    background-color:#f3f4f6;
+    color:#40454f;
+    display:block;
+    margin-top: 1px;
+    padding: 8px;
+}
+
+.subMenu li a:hover {
+    color:coral;
+}
+
+
+
+/*--fin menú de nav--*/
+
+
+/*BEM ASIDE*/
+
+.aside {
+    top: 260px;
+    right: 1px;
+    display: inline-block;
+    align-items: right;
+    position: fixed;
+}
+.aside__list {
+    list-style-type:none; 
+    }
+
+.aside__list__li__img {
+    width: 47px;
+    min-width: 20px;
+    padding: 5px;
+    transition: 1s;
+}
+
+.aside img:hover {
+    transform:scale(1.5,1.5);
+}
+
+@media only screen and (min-width:768px) {
+
+    .aside__list__li__img {
+        width: 55px;
+        min-width: 20px;
+        padding: 5px;
+        transition: 1s;
+    }
+
+}
+
+@media only screen and (min-width:1000px) {
+
+    .aside__list__li__img {
+        width: 70px;
+        min-width: 20px;
+        padding: 5px;
+        transition: 1s;
+    }
+
+}
+
+/*BEM MAIN*/
+
+.main {
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    padding-top: 150px;
+    padding-bottom: 10px;
+    margin-left:5px;
+    margin-right:5px;
+}
+
+.main__video__edit {
+    width:100%;
+}
+
+@media only screen and (min-width:768px) {
+
+
+    .main {
+        width:100%;
+        display:flex;
+        flex-direction: row;
+        justify-content:center;
+        padding-top: 145px;
+        padding-bottom: 10px;
+        margin-left:5px;
+        margin-right:5px;
+    }
+    .main__video__edit {
+        width:700px;
+    }
+}
+
+@media only screen and (min-width:1000px) {
+
+    .main {
+        width:100%;
+        display:flex;
+        flex-direction: row;
+        justify-content:center;
+        padding-top: 220px;
+        padding-bottom: 10px;
+        margin-left:5px;
+        margin-right:5px;
+    }
+
+    .main__video__edit {
+        width:1000px;
+        max-width: 1200px;
+    }
+}
+
+
+/*SECTIONS*/
+
+.section1 {
+    width:100%;
+    padding-top:160px;
+    text-align: center;
+}
+
+@media only screen and (min-width:1000px) {
+
+    .section1 {
+        width:100%;
+        padding-top:240px;
+        text-align: center;
+    }
+
+}
+.section2 {
+    text-align: center;
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content:center;
+    margin:10px 20px 10px 20px;
+}
+
+/*BEM GALERIA HORIZONTAL*/
+
+.galeriaHorizontal {
+    display: flex;
+    flex-flow:column wrap;
+    justify-content:center;
+}
+
+.galeriaHorizontal__diseno {
+    width:100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #d1d4dc;
+}
+
+.galeriaHorizontal__descrip {
+    position: relative;
+    top: 40%;
+    width:100%;
+    text-align: center;
+    font-size: 18px;
+    text-shadow: 2px 2px #40454f;
+}
+
+@media only screen and (min-width:1000px) {
+    
+    .galeriaHorizontal__descrip {
+        position: relative;
+        top: 40%;
+        width:100%;
+        text-align: center;
+        font-size: 40px;
+        text-shadow: 2px 2px #40454f;
+    }
+    
+}
+
+/*BEM FOOTER*/
+
+.footer {
+    width:100%;
+    height:40px;
+    display:flex;
+    flex-direction: row nowrap;
+    justify-content:space-evenly;
+    bottom: 0px;
+    margin-top:40px;
+}
+
+.footer__column{
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.footer__column__list { 
+    list-style-type: none;
+   text-align:center;
+   transition:all 2s;
+}
+
+.footer__column__list--oculto {
+    display:none;
+}
+
+.footer__column__item {
+    margin-left:10px;
+    margin-right:10px;
+}
+
+.footer__column__item:hover{
+    transform:scale(1.1,1.1);
+    color:coral;
+}
+
+.footer__column__list:hover {
+    transform:scale(1.1,1.1);
+    color:coral;
+}
+
+.footer__icono{
+    width: 15px;
+    transition:all 2s;
+}
+
+.footer__icono:hover {
+    color:coral;
+}
+
+@media only screen and (min-width:768px) {
+
+    .footer {
+        width:100%;
+        height:70px;
+        display:flex;
+        flex-direction: row nowrap;
+        justify-content:space-evenly;
+    }
+
+    .footer__column__list { 
+        list-style-type: none;
+       text-align:center;
+       transition:all 1s;
+       font-size:$letraXl;
+    }
+
+    .footer__icono{
+        width:40px;
+    }
+
+    .footer__column__list--oculto {
+        display:flex;
+    }
+}
+
+
+@media only screen and (min-width:1000px) {
+
+    .footer__icono{
+        width:60px;
+    }
+}
+
+
+/*BEM TABLA DE INDEX*/
+
+.tablaIndex {
+    margin: 20px 10px 20px 10px;
+    padding:10px;
+    text-align: center;
+}
+
+.tablaIndex__titulo {
+    font-size: $letraXl;
+    text-transform:uppercase;
+    letter-spacing: $letraSpace;
+    word-spacing: $palabraSpace;
+}
+
+.tablaIndex__punto1 {
+    font-size:14px;
+    font-style:italic;
+    text-transform:uppercase;
+}
+
+.tablaIndex__punto2 {
+    font-size:12px; 
+    font-weight: bold;
+
+}
+
+.tablaIndex__apto {
+    font-size:14px;
+    text-align: center;
+    font-style: italic;
+}
+
+.tablaIndex__aptoVajilla {
+    list-style-image: url("../media/coffee.png"); 
+    text-align: center;
+    font-style: italic;
+    list-style-position:inside;
+    transform:translate(0px, 10px);
+}
+
+.tablaIndex__aptoMicro {
+    list-style-image: url("../media/sun.png"); 
+    list-style-position: inside;
+    transform:translate(0px, 10px);
+}
+
+@media only screen and (min-width:768px) {
+
+
+    .tablaIndex__titulo {
+        font-size: 20px;
+        text-transform:uppercase;
+        letter-spacing: 5px;
+        word-spacing: 12px;
+    }
+    
+    .tablaIndex__punto1 {
+        font-size:16px;
+        font-style:italic;
+        text-transform:uppercase;
+    }
+    
+    .tablaIndex__punto2 {
+        font-size:14px; 
+        font-weight: bold;
+    
+    }
+    
+    .tablaIndex__apto {
+        font-size:14px;
+        text-align: center;
+        font-style: italic;
+    }
+
+}
+
+
+@media only screen and (min-width:1000px) {
+
+    .tablaIndex__titulo {
+        font-size: 28px;
+        text-transform:uppercase;
+        letter-spacing: 5px;
+        word-spacing: 12px;
+    }
+    
+    .tablaIndex__punto1 {
+        font-size:25px;
+        font-style:italic;
+        text-transform:uppercase;
+    }
+    
+    .tablaIndex__punto2 {
+        font-size:22px; 
+        font-weight: bold;
+    
+    }
+    
+    .tablaIndex__apto {
+        font-size:20px;
+        text-align: center;
+        font-style: italic;
+    }
+
+}
+
+/*BEM ENVIOS*/
+
+.envios {
+    margin-top:10px;
+    margin-bottom:10px;
+    display:flex;
+    align-items:flex-start;
+}
+
+.envios__barrios {
+    text-align:center;
+    list-style-type:disc;
+    list-style-position:inside;
+    line-height: 10px;
+}
+
+.envios__precio {
+    font-size:18px;
+    letter-spacing: $letraSpace;
+}
+
+.envios__6000 {
+  color: coral;
+  text-shadow: burlywood;
+  font-weight: lighter;
+}
+
+.envios__foto {
+    text-align:center;
+    width:100%;
+    margin-bottom:20px;
+}
+
+/*BEM MEDIOS DE PAGO*/
+
+.pagos__texto {
+    line-height: $oracionSpace;
+    text-align:center;
+    padding-top: 10px;
+    margin-bottom:10px;
+}
+
+.pagos__aclaracion {
+    padding-top: 30px;
+    margin-bottom:10px;
+
+}
+
+.pagos__foto {
+    text-align:center;
+    width:100%;
+    margin-bottom:20px;
+}
+
+/*BEM FAQS*/
+
+.faqs {
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+.faqs__preguntas {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.faqs__respuestas {
+    background-color:#79a4a4a9;
+    color:#f3f4f6;
+}
+
+.faqs__foto {
+    text-align:center;
+    width:100%;
+    margin-bottom:20px;
+}
+
+/*BEM SOBRE BLANCO PIEDRA*/
+
+.sobreBP {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.sobreBP__texto {
+    background-color: #40454f50; 
+    color:#f3f4f6;
+  }
+
+.sobreBP__destacado {
+    font-size: $letraXxl;
+    letter-spacing: $letraSpace;
+    color:coral;
+    text-transform: uppercase;
+    padding: 5px;
+    text-shadow:#d1d4dc 2px 2px;
+  }
+
+
+  @media only screen and (min-width:1000px) {
+
+    .sobreBP__destacado {
+        font-size:50px; 
+        text-shadow:#d1d4dc 5px 5px;
+    }
+}
+
+/*BEM PRECIOS*/
+
+.tabla__precios {
+    margin:5px;
+    text-align:center;
+}
+
+@media only screen and (min-width:768px) {
+
+    .tabla__precios {
+        margin-left:10px;
+        margin-right:10px;
+        margin-bottom: 50px;
+        text-align:center;
+    }
+    
+}
