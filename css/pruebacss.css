@@ -666,7 +666,7 @@ h2 {
   text-shadow: 1px 1px #40454f; }
 
 h3 {
-  color: #d1d4dc; }
+  color: #40454f; }
 
 h4 {
   color: #79A4A4; }
@@ -865,7 +865,13 @@ em {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto auto auto auto auto auto;
   gap: 10px 10px;
-  grid-template-areas: "gridTazas gridVasos" "gridMates gridBowls" "gridSets gridSets" "gridPlatos gridPlatos" "gridBandejas gridPortaUtensillos" "gridObjetos gridObjetos" "gridMacetas gridFloreros";
+  grid-template-areas: "gridTazas gridVasos"
+ "gridMates gridBowls"
+ "gridSets gridSets"
+ "gridPlatos gridPlatos"
+ "gridBandejas gridPortaUtensillos"
+ "gridObjetos gridObjetos"
+ "gridMacetas gridFloreros";
   justify-content: center;
   justify-items: stretch;
   align-items: stretch;
@@ -919,7 +925,11 @@ em {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     gap: 10px 10px;
-    grid-template-areas: "gridTazas gridVasos gridSets gridSets" "gridMates gridBowls gridSets gridSets" "gridPlatos gridPlatos gridBandejas gridBandejas" "gridPlatos gridPlatos gridPortaUtensillos gridPortaUtensillos" "gridObjetos gridObjetos gridMacetas gridFloreros"; }
+    grid-template-areas: "gridTazas gridVasos gridSets gridSets"
+ "gridMates gridBowls gridSets gridSets"
+ "gridPlatos gridPlatos gridBandejas gridBandejas"
+ "gridPlatos gridPlatos gridPortaUtensillos gridPortaUtensillos"
+ "gridObjetos gridObjetos gridMacetas gridFloreros"; }
   .gridGallery__gridTazas {
     grid-area: gridTazas; }
   .gridGallery__gridVasos {
@@ -956,7 +966,15 @@ em {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.2fr 1fr 1fr 0.5fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
   gap: 10px 10px;
-  grid-template-areas: "encargo__texto encargo__texto" "encargo__formulario encargo__formulario" "encargo__formulario encargo__formulario" "encargo__texto2 encargo__texto2" "paleta1 paleta1" "paleta2 paleta2" "paleta3 paleta3" "paleta4 paleta4" "paleta5 paleta5";
+  grid-template-areas: "encargo__texto encargo__texto"
+ "encargo__formulario encargo__formulario"
+ "encargo__formulario encargo__formulario"
+ "encargo__texto2 encargo__texto2"
+ "paleta1 paleta1"
+ "paleta2 paleta2"
+ "paleta3 paleta3"
+ "paleta4 paleta4"
+ "paleta5 paleta5";
   margin: 20px 20px; }
 
 .encargo__texto {
@@ -1058,7 +1076,10 @@ em {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 0.5fr 0.2fr 0.2fr;
   gap: 20px 20px;
-  grid-template-areas: "contactoForm contactoForm" "contactoMap contactoMap" "contactoWeb contactoWeb" "contactoRedes contactoRedes";
+  grid-template-areas: "contactoForm contactoForm"
+ "contactoMap contactoMap"
+ "contactoWeb contactoWeb"
+ "contactoRedes contactoRedes";
   justify-content: center;
   align-content: center;
   margin: 10px; }
