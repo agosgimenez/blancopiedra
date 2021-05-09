@@ -1,33 +1,33 @@
 /*GRADIENTES y TRANSFORMACIONES*/
 
 .header {
-    background-image: linear-gradient(#f3f4f6,#d1d4dc)
-}
+        background-image: linear-gradient(#f3f4f6,#d1d4dc)
+    }
 
 
 .logo:hover {
-    transform: scale(1.1,1.1);
-}
+            transform: scale(1.1,1.1);
+        }
 
 .footer__column__list:hover {
-    transform:scale(1.1,1.1);
-    color:coral;
-}
+                            transform:scale(1.1,1.1);
+                            color:coral;
+                        }
 
 .contacto__iconosRedes img:hover {
-    transform:scale(1.5,1.5);
-}
+                                transform:scale(1.5,1.5);
+                            }
 
 .aside img:hover {
-    transform:scale(1.5,1.5);
-}
+                transform:scale(1.5,1.5);
+            }
 
 .inputs {
-    transform:scale(1.2,1);
-}
+        transform:scale(1.2,1);
+    }
 
 .inputs:hover {
-    transform:rotatex(10deg);
-    color:coral;
-    font-weight: bold;
-}
+                transform:rotatex(10deg);
+                color:coral;
+                font-weight: bold;
+            }
