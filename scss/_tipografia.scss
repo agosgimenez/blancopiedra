@@ -1,4 +1,28 @@
-/*tamaño y fuentes*/
+
+/*FUENTES , TAMAÑO, COLORES DE TIPOGRAFIA*/
+
+/*PALETA*/
+
+$verdeOscuro: #79A4A4;
+    
+$grisOscuro: #40454f;
+
+$grisMedio: #A6A6A6;
+
+$grisClaro: #d1d4dc;
+    
+$blanco: #f3f4f6;
+    
+$verdeAqua: #C2D6D6;
+ 
+$coral:coral;
+
+$magenta: magenta;
+
+$verdePetroleo: teal;
+
+
+/*BODY*/
 
 body {
     font-size: 14px; 
@@ -11,9 +35,6 @@ body {
 
     body {
         font-size: 16px; 
-        font-style: normal; 
-        font-family: 'Poppins', Tahoma, Arial, sans-serif;
-        text-align: center;
     }
 }
 
@@ -25,11 +46,13 @@ body {
 
 }
 
-/*titulos*/
+/*TITULOS*/
 
 h1 {
     letter-spacing: 5px;
     font-size: 25px;
+    color:$grisOscuro;
+    text-shadow: $verdeAqua 3px 3px;
 }
 
 @media only screen and (min-width:768px) {
@@ -50,7 +73,9 @@ h1 {
 
 
 h2 {
-    font-size:20px; 
+    font-size:20px;
+    color:$verdeOscuro;
+    text-shadow: 1px 1px $grisOscuro;
 }
 
 @media only screen and (min-width:768px) {
@@ -74,6 +99,7 @@ h3 {
     font-weight: lighter; 
     padding-top: 15px;
     padding-bottom: 5px;
+    color: $grisClaro;
 }
 
 @media only screen and (min-width:768px) {
@@ -94,6 +120,7 @@ h3 {
 h4 {
     font-size:16px; 
     text-transform: uppercase;
+    color:$verdeOscuro;
 }
 
 
@@ -101,53 +128,63 @@ h4 {
 
     h4 {
         font-size:16px; 
+        }   
     }
-}
 
 @media only screen and (min-width:1000px) {
 
-h4 {
-    font-size:18px; 
-    text-transform: uppercase;
-}
-}
+    h4 {
+        font-size:18px; 
+        text-transform: uppercase;
+        }
+    }
 
 /*a,em*/
 
 em {
     font-weight: lighter;
     font-style: italic;
-    color:coral;
+    color:$coral;
     text-transform: uppercase;
 }
 
+a {
+    color:$blanco;  
+}
 
 a:hover {
     font-style:italic; 
-    color:#79A4A4;
+    color:$verdeOscuro;
     text-decoration:none;
+}
+
+a:active {
+    color: $coral;  
 }
 
 /*footer*/
 
 .footer {
     font-size: 10px;
+    color:$verdeAqua; 
+    background-color:$grisOscuro;
 
 }
 
 @media only screen and (min-width:1000px) {
 
     .footer {
-        font-size: 12px;
-    
+            font-size: 12px;
+        
+        }
     }
-}
 
-/*en tablas y formularios*/
+/*tablas y formularios*/
 
 .table {
     padding:30px; 
     word-spacing: 10px;
+    background-color:$verdeOscuro;
 }
 
 table ol {
@@ -160,12 +197,13 @@ table ul {
 
 th {
     letter-spacing: 5px;
+    background-color: $blanco;
 }
 
-.botonesFormulario{
-    margin-top: 10px;
-}
+td {
 
+    color:$blanco;
+}
 
 /*especiales*/
 
@@ -177,18 +215,27 @@ th {
     font-size: 45px;
 }
 
+.maps {
+    color:$verdeAqua; 
+}
+
 .botonAlert {
     font-size: 16px;
     margin-left:50px;
     margin-right:50px;
 }
 
+.botonesFormulario{
+    margin-top: 10px;
+}
+
 @media only screen and (min-width:1000px) {
 
     .botonAlert {
         font-size: 20px;
-}
-}
+        }
+    }
+
 
 #handMade {
     text-align: center;
@@ -202,7 +249,7 @@ th {
 
 @media only screen and (min-width:768px) {
 
-    #handMade {  
+#handMade {  
             text-align: center;
             text-transform: uppercase;
             letter-spacing: 30px;
@@ -211,12 +258,12 @@ th {
             border-bottom: #d1d4dc solid 10px;
             margin-left: 30px;
             margin-right: 30px;
-      }
+        }
     }
 
-    @media only screen and (min-width:1000px) {
+@media only screen and (min-width:1000px) {
 
-        #handMade {  
+    #handMade {  
             text-align: center;
             text-transform: uppercase;
             letter-spacing: 30px;
@@ -225,24 +272,22 @@ th {
             border-bottom: #d1d4dc solid 10px;
             margin-left: 30px;
             margin-right: 30px;
-      }
+        }
     }
     
-    .map__article {
+.map__article {
         font-size: 20px;
         line-height: 40px;
-    }
+    }    
 
-    .map__items ul li{
+.map__items ul li{
         list-style-type:circle;
     }
 
-    .map a {
+.map a {
         color:#79A4A4;
     }
 
-    .map li {
+.map li {
         color:coral;
     }
-
-    .envios__6000: $magenta;

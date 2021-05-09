@@ -5,7 +5,7 @@
   padding: 0; }
 
 /*ESTRUCTURA*/
-/*ESTRUCTURA MOBILE FIRST*/
+/*ESTRUCTURA MOBILE FIRST CON MEDIA QUERIES PARA TABLES Y NOTE*/
 .container {
   padding: 0px; }
 
@@ -25,7 +25,7 @@ body {
   min-height: 95px;
   margin-top: 0px;
   text-align: center;
-  background-color: #f3f4f6;
+  background-image: linear-gradient(#f3f4f6, #d1d4dc);
   position: fixed;
   z-index: 2; }
 
@@ -39,14 +39,7 @@ body {
 
 @media only screen and (min-width: 768px) {
   .header {
-    width: 100%;
-    height: 130px;
-    min-height: 95px;
-    margin-top: 0px;
-    text-align: center;
-    background-color: #f3f4f6;
-    position: fixed;
-    z-index: 2; }
+    height: 130px; }
   .header__img__logo {
     width: 120px;
     min-width: 100px;
@@ -54,13 +47,7 @@ body {
 
 @media only screen and (min-width: 1000px) {
   .header {
-    width: 100%;
-    height: 190px;
-    margin-top: 0px;
-    text-align: center;
-    background-color: #f3f4f6;
-    position: fixed;
-    z-index: 2; }
+    height: 190px; }
   .header__img__logo {
     width: 180px;
     min-width: 100px;
@@ -245,12 +232,7 @@ body {
 
 @media only screen and (min-width: 1000px) {
   .galeriaHorizontal__descrip {
-    position: relative;
-    top: 40%;
-    width: 100%;
-    text-align: center;
-    font-size: 40px;
-    text-shadow: 2px 2px #40454f; } }
+    font-size: 40px; } }
 
 /*BEM FOOTER*/
 .footer {
@@ -359,16 +341,11 @@ body {
     letter-spacing: 5px;
     word-spacing: 12px; }
   .tablaIndex__punto1 {
-    font-size: 16px;
-    font-style: italic;
-    text-transform: uppercase; }
+    font-size: 16px; }
   .tablaIndex__punto2 {
-    font-size: 14px;
-    font-weight: bold; }
+    font-size: 14px; }
   .tablaIndex__apto {
-    font-size: 14px;
-    text-align: center;
-    font-style: italic; } }
+    font-size: 14px; } }
 
 @media only screen and (min-width: 1000px) {
   .tablaIndex__titulo {
@@ -377,16 +354,11 @@ body {
     letter-spacing: 5px;
     word-spacing: 12px; }
   .tablaIndex__punto1 {
-    font-size: 25px;
-    font-style: italic;
-    text-transform: uppercase; }
+    font-size: 25px; }
   .tablaIndex__punto2 {
-    font-size: 22px;
-    font-weight: bold; }
+    font-size: 22px; }
   .tablaIndex__apto {
-    font-size: 20px;
-    text-align: center;
-    font-style: italic; } }
+    font-size: 20px; } }
 
 /*BEM ENVIOS*/
 .envios {
@@ -406,7 +378,7 @@ body {
   letter-spacing: 5px; }
 
 .envios__6000 {
-  color: coral;
+  color: magenta;
   text-shadow: burlywood;
   font-weight: lighter; }
 
@@ -441,7 +413,7 @@ body {
   margin-bottom: 30px; }
 
 .faqs__respuestas {
-  background-color: #79a4a4a9;
+  background-color: #79A4A4;
   color: #f3f4f6; }
 
 .faqs__foto {
@@ -456,7 +428,7 @@ body {
   padding: 10px; }
 
 .sobreBP__texto {
-  background-color: #40454f50;
+  background-color: #40454f;
   color: #f3f4f6; }
 
 .sobreBP__destacado {
@@ -485,7 +457,9 @@ body {
     text-align: center; } }
 
 /*TIPOGRAFIA*/
-/*tamaño y fuentes*/
+/*FUENTES , TAMAÑO, COLORES DE TIPOGRAFIA*/
+/*PALETA*/
+/*BODY*/
 body {
   font-size: 14px;
   font-style: normal;
@@ -494,19 +468,18 @@ body {
 
 @media only screen and (min-width: 768px) {
   body {
-    font-size: 16px;
-    font-style: normal;
-    font-family: 'Poppins', Tahoma, Arial, sans-serif;
-    text-align: center; } }
+    font-size: 16px; } }
 
 @media only screen and (min-width: 1000px) {
   body {
     font-size: 18px; } }
 
-/*titulos*/
+/*TITULOS*/
 h1 {
   letter-spacing: 5px;
-  font-size: 25px; }
+  font-size: 25px;
+  color: #40454f;
+  text-shadow: #C2D6D6 3px 3px; }
 
 @media only screen and (min-width: 768px) {
   h1 {
@@ -519,7 +492,9 @@ h1 {
     font-size: 70px; } }
 
 h2 {
-  font-size: 20px; }
+  font-size: 20px;
+  color: #79A4A4;
+  text-shadow: 1px 1px #40454f; }
 
 @media only screen and (min-width: 768px) {
   h2 {
@@ -534,7 +509,8 @@ h3 {
   font-style: italic;
   font-weight: lighter;
   padding-top: 15px;
-  padding-bottom: 5px; }
+  padding-bottom: 5px;
+  color: #d1d4dc; }
 
 @media only screen and (min-width: 768px) {
   h3 {
@@ -546,7 +522,8 @@ h3 {
 
 h4 {
   font-size: 16px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: #79A4A4; }
 
 @media only screen and (min-width: 768px) {
   h4 {
@@ -564,23 +541,32 @@ em {
   color: coral;
   text-transform: uppercase; }
 
+a {
+  color: #f3f4f6; }
+
 a:hover {
   font-style: italic;
   color: #79A4A4;
   text-decoration: none; }
 
+a:active {
+  color: coral; }
+
 /*footer*/
 .footer {
-  font-size: 10px; }
+  font-size: 10px;
+  color: #C2D6D6;
+  background-color: #40454f; }
 
 @media only screen and (min-width: 1000px) {
   .footer {
     font-size: 12px; } }
 
-/*en tablas y formularios*/
+/*tablas y formularios*/
 .table {
   padding: 30px;
-  word-spacing: 10px; }
+  word-spacing: 10px;
+  background-color: #79A4A4; }
 
 table ol {
   list-style-type: none; }
@@ -589,10 +575,11 @@ table ul {
   list-style-type: none; }
 
 th {
-  letter-spacing: 5px; }
+  letter-spacing: 5px;
+  background-color: #f3f4f6; }
 
-.botonesFormulario {
-  margin-top: 10px; }
+td {
+  color: #f3f4f6; }
 
 /*especiales*/
 .jumbotron {
@@ -601,10 +588,16 @@ th {
 .jumbotron__titulo {
   font-size: 45px; }
 
+.maps {
+  color: #C2D6D6; }
+
 .botonAlert {
   font-size: 16px;
   margin-left: 50px;
   margin-right: 50px; }
+
+.botonesFormulario {
+  margin-top: 10px; }
 
 @media only screen and (min-width: 1000px) {
   .botonAlert {
@@ -666,7 +659,7 @@ h2 {
   text-shadow: 1px 1px #40454f; }
 
 h3 {
-  color: #40454f; }
+  color: #d1d4dc; }
 
 h4 {
   color: #79A4A4; }
@@ -865,13 +858,7 @@ em {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto auto auto auto auto auto;
   gap: 10px 10px;
-  grid-template-areas: "gridTazas gridVasos"
- "gridMates gridBowls"
- "gridSets gridSets"
- "gridPlatos gridPlatos"
- "gridBandejas gridPortaUtensillos"
- "gridObjetos gridObjetos"
- "gridMacetas gridFloreros";
+  grid-template-areas: "gridTazas gridVasos" "gridMates gridBowls" "gridSets gridSets" "gridPlatos gridPlatos" "gridBandejas gridPortaUtensillos" "gridObjetos gridObjetos" "gridMacetas gridFloreros";
   justify-content: center;
   justify-items: stretch;
   align-items: stretch;
@@ -925,11 +912,7 @@ em {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     gap: 10px 10px;
-    grid-template-areas: "gridTazas gridVasos gridSets gridSets"
- "gridMates gridBowls gridSets gridSets"
- "gridPlatos gridPlatos gridBandejas gridBandejas"
- "gridPlatos gridPlatos gridPortaUtensillos gridPortaUtensillos"
- "gridObjetos gridObjetos gridMacetas gridFloreros"; }
+    grid-template-areas: "gridTazas gridVasos gridSets gridSets" "gridMates gridBowls gridSets gridSets" "gridPlatos gridPlatos gridBandejas gridBandejas" "gridPlatos gridPlatos gridPortaUtensillos gridPortaUtensillos" "gridObjetos gridObjetos gridMacetas gridFloreros"; }
   .gridGallery__gridTazas {
     grid-area: gridTazas; }
   .gridGallery__gridVasos {
@@ -966,15 +949,7 @@ em {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.2fr 1fr 1fr 0.5fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
   gap: 10px 10px;
-  grid-template-areas: "encargo__texto encargo__texto"
- "encargo__formulario encargo__formulario"
- "encargo__formulario encargo__formulario"
- "encargo__texto2 encargo__texto2"
- "paleta1 paleta1"
- "paleta2 paleta2"
- "paleta3 paleta3"
- "paleta4 paleta4"
- "paleta5 paleta5";
+  grid-template-areas: "encargo__texto encargo__texto" "encargo__formulario encargo__formulario" "encargo__formulario encargo__formulario" "encargo__texto2 encargo__texto2" "paleta1 paleta1" "paleta2 paleta2" "paleta3 paleta3" "paleta4 paleta4" "paleta5 paleta5";
   margin: 20px 20px; }
 
 .encargo__texto {
@@ -1076,10 +1051,7 @@ em {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 0.5fr 0.2fr 0.2fr;
   gap: 20px 20px;
-  grid-template-areas: "contactoForm contactoForm"
- "contactoMap contactoMap"
- "contactoWeb contactoWeb"
- "contactoRedes contactoRedes";
+  grid-template-areas: "contactoForm contactoForm" "contactoMap contactoMap" "contactoWeb contactoWeb" "contactoRedes contactoRedes";
   justify-content: center;
   align-content: center;
   margin: 10px; }
