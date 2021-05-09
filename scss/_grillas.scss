@@ -1,5 +1,8 @@
 
+/*variables*/
 $letraXl: 16px;
+
+$letraMedia: 18px;
 
 $letraXxl: 24px;
 
@@ -11,27 +14,33 @@ $palabraSpace: 8px;
 
 $spaceInputs: 15px;
 
+$coral:coral;
+
+$magenta: magenta;
+
+$verdePetroleo: teal;
+
 
 /*GRID GALERIA DE INDEX*/
 
 .gridGallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto auto auto auto auto;
-    gap: 10px 10px;
-    grid-template-areas:
-      "gridTazas gridVasos"
-      "gridMates gridBowls"
-      "gridSets gridSets"
-      "gridPlatos gridPlatos"
-      "gridBandejas gridPortaUtensillos"
-      "gridObjetos gridObjetos"
-      "gridMacetas gridFloreros";
-    justify-content:center;
-    justify-items: stretch;
-    align-items: stretch;
-    margin:10px;
-}
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              grid-template-rows: auto auto auto auto auto auto auto;
+              gap: 10px 10px;
+              grid-template-areas:
+                "gridTazas gridVasos"
+                "gridMates gridBowls"
+                "gridSets gridSets"
+                "gridPlatos gridPlatos"
+                "gridBandejas gridPortaUtensillos"
+                "gridObjetos gridObjetos"
+                "gridMacetas gridFloreros";
+              justify-content:center;
+              justify-items: stretch;
+              align-items: stretch;
+              margin:10px;
+            }
 
 .gridGallery__gridTazas { grid-area: gridTazas; }
 .gridGallery__gridVasos { grid-area: gridVasos; }
@@ -46,40 +55,41 @@ $spaceInputs: 15px;
 .gridGallery__gridFloreros { grid-area: gridFloreros; }
   
 .gridGallery__descrip {
-    position: relative;
-    top: 30%;
-    width:100%;
-    text-align: center;
-    font-size: 22px;
-    text-shadow: 2px 2px #40454f; 
-    color:#f3f4f6;
+                    position: relative;
+                    top: 30%;
+                    width:100%;
+                    text-align: center;
+                    font-size: 22px;
+                    text-shadow: 2px 2px $grisOscuro; 
+                    color:$blanco;
 }
 
 @media only screen and (min-width:1000px) {
 
   .gridGallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    gap: 10px 10px;
-    grid-template-areas:
-      "gridTazas gridVasos gridSets gridSets"
-      "gridMates gridBowls gridSets gridSets"
-      "gridPlatos gridPlatos gridBandejas gridBandejas"
-      "gridPlatos gridPlatos gridPortaUtensillos gridPortaUtensillos"
-      "gridObjetos gridObjetos gridMacetas gridFloreros";
-  }
-  .gridGallery__gridTazas { grid-area: gridTazas; }
-  .gridGallery__gridVasos { grid-area: gridVasos; }
-  .gridGallery__gridMates { grid-area: gridMates; }
-  .gridGallery__gridSets { grid-area: gridSets; }
-  .gridGallery__gridBowls { grid-area: gridBowls; }
-  .gridGallery__gridPlatos { grid-area: gridPlatos; }
-  .gridGallery__gridBandejas { grid-area: gridBandejas; }
-  .gridGallery__gridPortaUtensillos { grid-area: gridPortaUtensillos; }
-  .gridGallery__gridMacetas { grid-area: gridMacetas; }
-  .gridGallery__gridObjetos { grid-area: gridObjetos; }
-  .gridGallery__gridFloreros { grid-area: gridFloreros; }
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr 1fr;
+              grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+              gap: 10px 10px;
+              grid-template-areas:
+                "gridTazas gridVasos gridSets gridSets"
+                "gridMates gridBowls gridSets gridSets"
+                "gridPlatos gridPlatos gridBandejas gridBandejas"
+                "gridPlatos gridPlatos gridPortaUtensillos gridPortaUtensillos"
+                "gridObjetos gridObjetos gridMacetas gridFloreros";
+            }
+
+.gridGallery__gridTazas { grid-area: gridTazas; }
+.gridGallery__gridVasos { grid-area: gridVasos; }
+.gridGallery__gridMates { grid-area: gridMates; }
+.gridGallery__gridSets { grid-area: gridSets; }
+.gridGallery__gridBowls { grid-area: gridBowls; }
+.gridGallery__gridPlatos { grid-area: gridPlatos; }
+.gridGallery__gridBandejas { grid-area: gridBandejas; }
+.gridGallery__gridPortaUtensillos { grid-area: gridPortaUtensillos; }
+.gridGallery__gridMacetas { grid-area: gridMacetas; }
+.gridGallery__gridObjetos { grid-area: gridObjetos; }
+.gridGallery__gridFloreros { grid-area: gridFloreros; }
   
 .gridGallery__descrip {
     position: relative;
@@ -87,186 +97,247 @@ $spaceInputs: 15px;
     width:100%;
     text-align: center;
     font-size: 50px;
-    text-shadow: 2px 2px #40454f;
+    text-shadow: 2px 2px $grisOscuro
 }
+
 }
 
 
   /*GRID ENCARGOS*/
 
   .gridEncargos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.2fr 1fr 1fr 0.5fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
-    gap: 10px 10px;
-    grid-template-areas:
-      "encargo__texto encargo__texto"
-      "encargo__formulario encargo__formulario"
-      "encargo__formulario encargo__formulario"
-      "encargo__texto2 encargo__texto2"
-      "paleta1 paleta1"
-      "paleta2 paleta2"
-      "paleta3 paleta3"
-      "paleta4 paleta4"
-      "paleta5 paleta5";
-      margin: 20px 20px;
-  }
-  .encargo__texto { grid-area: encargo__texto; font-size: 18px; color:#79A4A4;}
-  .encargo__formulario { grid-area: encargo__formulario; background-color:#79a4a4a9;
-    color:#f3f4f6; padding: 10px; }
-  .encargo__texto2 { grid-area: encargo__texto2;  }
-  .paleta1 { grid-area: paleta1; margin-top:10px; margin-bottom:10px;display:flex; flex-direction:row; justify-content: center;}
-  .paleta2 { grid-area: paleta2; margin-top:10px; margin-bottom:10px;display:flex; flex-direction:row; justify-content: center;}
-  .paleta3 { grid-area: paleta3; margin-top:10px; margin-bottom:10px;display:flex; flex-direction:row; justify-content: center;}
-  .paleta4 { grid-area: paleta4; margin-top:10px; margin-bottom:10px;display:flex; flex-direction:row; justify-content: center;}
-  .paleta5 { grid-area: paleta5; margin-top:10px; margin-bottom:10px;display:flex; flex-direction:row; justify-content: center;}
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 0.2fr 1fr 1fr 0.5fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+                gap: 10px 10px;
+                grid-template-areas:
+                  "encargo__texto encargo__texto"
+                  "encargo__formulario encargo__formulario"
+                  "encargo__formulario encargo__formulario"
+                  "encargo__texto2 encargo__texto2"
+                  "paleta1 paleta1"
+                  "paleta2 paleta2"
+                  "paleta3 paleta3"
+                  "paleta4 paleta4"
+                  "paleta5 paleta5";
+                  margin: 20px 20px;
+              }
+
+.encargo__texto { 
+                  grid-area: encargo__texto; 
+                  font-size: 18px; 
+                  color:$grisOscuro;
+                }
+
+.encargo__formulario {
+                      grid-area: encargo__formulario; 
+                      background-color: $grisOscuro;
+                      color: $blanco; 
+                      padding: 10px; 
+                    }
+
+.encargo__texto2 { grid-area: encargo__texto2;}
+
+.paleta1 { 
+        grid-area: paleta1; 
+        margin-top:10px; 
+        margin-bottom:10px;
+        display:flex; 
+        flex-direction:row; 
+        justify-content: center;
+      }
+
+.paleta2 {
+          grid-area: paleta2; 
+          margin-top:10px; 
+          margin-bottom:10px;
+          display:flex; 
+          flex-direction:row; 
+          justify-content: center;
+        }
+
+.paleta3 { 
+        grid-area: paleta3; 
+        margin-top:10px; 
+        margin-bottom:10px;
+        display:flex; 
+        flex-direction:row; 
+        justify-content: center;
+      }
+
+.paleta4 { 
+        grid-area: paleta4; 
+        margin-top:10px; 
+        margin-bottom:10px;
+        display:flex; 
+        flex-direction:row; 
+        justify-content: center;
+      }
+
+.paleta5 { 
+        grid-area: paleta5; 
+        margin-top:10px; 
+        margin-bottom:10px;
+        display:flex; 
+        flex-direction:row; 
+        justify-content: center;
+      }
 
 .encargo__pedido { 
-    line-height: 20px;
-    margin-top:20px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
+                line-height: 20px;
+                margin-top:20px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
 
 .encargo__legend {
-    text-transform: uppercase;
-    text-shadow: 3px 3px #40454f;
-    font-size: 20px;
-}
+                text-transform: uppercase;
+                text-shadow: 3px 3px #40454f;
+                font-size: 20px;
+            }
 
 .encargo__detalles {
-    font-weight: bold;
-    font-size: 16px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-}
+                font-weight: bold;
+                font-size: 16px;
+                text-transform: uppercase;
+                letter-spacing: 4px;
+            }
 
 
 @media only screen and (min-width: 768px) {
 
   .encargo__formulario { 
-    margin-left: 50px;
-    margin-right: 50px;
-  }
+                      margin-left: 50px;
+                      margin-right: 50px;
+                    }
 
   .encargo__pedido { 
-    line-height: 20px;
-    margin-top:20px;
-    margin-left: 60px;
-    margin-right: 60px;
-}
+                  line-height: 20px;
+                  margin-top:20px;
+                  margin-left: 60px;
+                  margin-right: 60px;
+              }
+
 }
 
 @media only screen and (min-width: 1000px) {
 
   .encargo__texto {
-    font-size: 20px;
-  }
+                  font-size: 20px;
+                }
 
   .encargo__formulario {
-    margin-left: 200px;
-    margin-right: 200px;
-  }
+                      margin-left: 200px;
+                      margin-right: 200px;
+                    }
 
   .encargo__pedido { 
-    line-height: 20px;
-    margin-top:20px;
-    margin-left: 200px;
-    margin-right: 200px;
-}
+                    line-height: 20px;
+                    margin-top:20px;
+                    margin-left: 200px;
+                    margin-right: 200px;
+                }
 
 
 }
-
 
 /*GRID CONTACTO*/
 
 .gridContacto {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 0.5fr 0.2fr 0.2fr;
-  gap: 20px 20px;
-  grid-template-areas:
-    "contactoForm contactoForm"
-    "contactoMap contactoMap"
-    "contactoWeb contactoWeb"
-    "contactoRedes contactoRedes";
-  justify-content: center;
-  align-content: center;
-  margin:10px;
-}
-.contactoForm { grid-area: contactoForm; background-color:#79a4a4a9;
-  color:#f3f4f6; padding: 10px; }
-.contactoMap { grid-area: contactoMap; margin-left: 20px; margin-right:20px; }
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 0.5fr 0.2fr 0.2fr;
+                gap: 20px 20px;
+                grid-template-areas:
+                  "contactoForm contactoForm"
+                  "contactoMap contactoMap"
+                  "contactoWeb contactoWeb"
+                  "contactoRedes contactoRedes";
+                justify-content: center;
+                align-content: center;
+                margin:10px;
+              }
+
+.contactoForm { 
+              grid-area: contactoForm; 
+              background-color: $verdeOscuro;
+              color: $blanco; padding: 10px; 
+            }
+
+.contactoMap { 
+            grid-area: contactoMap; 
+            margin-left: 20px; 
+            margin-right:20px; 
+          }
 .contactoWeb { grid-area: contactoWeb; }
+
 .contactoRedes { grid-area: contactoRedes; }
 
 .contacto__visitRedes {
-  color:coral;
-  font-size:20px;
-  padding-top:10px;
-  margin:5px;
-  font-style: oblique;
-  text-transform: uppercase;
-}
+                      color:coral;
+                      font-size:20px;
+                      padding-top:10px;
+                      margin:5px;
+                      font-style: oblique;
+                      text-transform: uppercase;
+                    }
 
 .contacto__iconosRedes img {
-  width: 70px;
-  text-align: center; 
-  display:inline;
-  padding:10px;
-  margin-bottom: 20px;
-  transition: 1s;
-}
+                          width: 70px;
+                          text-align: center; 
+                          display:inline;
+                          padding:10px;
+                          margin-bottom: 20px;
+                          transition: 1s;
+                        }
 
 .contacto__iconosRedes img:hover {
-  transform:scale(1.5,1.5);
-}
+                                transform:scale(1.5,1.5);
+                              }
 
 .contacto__pregunta {
-  line-height: 38px;
-  margin-top:20px;
-}
+                    line-height: 38px;
+                    margin-top:20px;
+                  }
 
 .contacto__legend {
-  text-transform: uppercase;
-  text-shadow: 3px 3px #40454f;
-  font-size: 20px;
-}
+                  text-transform: uppercase;
+                  text-shadow: 3px 3px #40454f;
+                  font-size: 20px;
+                }
 
 .contacto__consulta {
-  font-weight: bold;
-  font-size: 16px;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-}
+                    font-weight: bold;
+                    font-size: 16px;
+                    text-transform: uppercase;
+                    letter-spacing: 4px;
+                  }
 
 .contacto__iframe {
-  margin-top:20px;
-  width:100%;
-  min-height:200px;
-}
+                  margin-top:20px;
+                  width:100%;
+                  min-height:200px;
+                }
 
 @media only screen and (min-width:768px) {
  
   .contacto__iframe {
-    margin-top:20px;
-    width:600px;
-    min-height:300px;
-  }
+                    margin-top:20px;
+                    width:600px;
+                    min-height:300px;
+                  }
 
   @media only screen and (min-width: 1000px) {
 
     .contactoForm {
-      margin-left: 200px;
-      margin-right: 200px;
-    }
+                  margin-left: 200px;
+                  margin-right: 200px;
+                }
 
     .contacto__iframe {
-      margin-top:20px;
-      width:900px;
-      min-height:300px;
-    }
-  
+                      margin-top:20px;
+                      width:900px;
+                      min-height:300px;
+                    }
   }
 }

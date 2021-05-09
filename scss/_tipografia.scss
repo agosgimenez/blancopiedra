@@ -1,7 +1,21 @@
 
 /*FUENTES , TAMAÑO, COLORES DE TIPOGRAFIA*/
 
-/*PALETA*/
+/*variables*/
+
+$letraMedia: 16px;
+
+$letraXl: 18px;
+
+$letraXxl: 24px;
+
+$letraSpace: 5px; 
+
+$oracionSpace: 20px;
+
+$palabraSpace: 8px;
+
+$spaceInputs: 15px;
 
 $verdeOscuro: #79A4A4;
     
@@ -34,14 +48,14 @@ body {
 @media only screen and (min-width:768px) {
 
     body {
-        font-size: 16px; 
+        font-size: $letraMedia; 
     }
 }
 
 @media only screen and (min-width:1000px) {
 
     body {
-        font-size: 18px;
+        font-size: $letraXl;
     }
 
 }
@@ -50,7 +64,7 @@ body {
 
 h1 {
     letter-spacing: 5px;
-    font-size: 25px;
+    font-size: $letraXxl;
     color:$grisOscuro;
     text-shadow: $verdeAqua 3px 3px;
 }
@@ -81,7 +95,7 @@ h2 {
 @media only screen and (min-width:768px) {
 
     h2 {
-        font-size: 25px; 
+        font-size: $letraXxl; 
     }
 }
 
@@ -94,7 +108,7 @@ h2 {
 
 
 h3 {
-    font-size:18px; 
+    font-size:$letraXl; 
     font-style:italic; 
     font-weight: lighter; 
     padding-top: 15px;
@@ -102,39 +116,24 @@ h3 {
     color: $grisClaro;
 }
 
-@media only screen and (min-width:768px) {
-
-    h3 {
-        font-size:18px; 
-    }
-}
-
 @media only screen and (min-width:1000px) {
 
     h3 {
-        font-size:25px; 
+        font-size:$letraXxl; 
     }
 }
 
 
 h4 {
-    font-size:16px; 
+    font-size:$letraMedia; 
     text-transform: uppercase;
     color:$verdeOscuro;
 }
 
-
-@media only screen and (min-width:768px) {
-
-    h4 {
-        font-size:16px; 
-        }   
-    }
-
 @media only screen and (min-width:1000px) {
 
     h4 {
-        font-size:18px; 
+        font-size: $letraXl; 
         text-transform: uppercase;
         }
     }
@@ -153,46 +152,44 @@ a {
 }
 
 a:hover {
-    font-style:italic; 
-    color:$verdeOscuro;
-    text-decoration:none;
-}
+        font-style:italic; 
+        color:$verdeOscuro;
+        text-decoration:none;
+    }
 
 a:active {
-    color: $coral;  
-}
+        color: $coral;  
+    }
 
 /*footer*/
 
 .footer {
-    font-size: 10px;
-    color:$verdeAqua; 
-    background-color:$grisOscuro;
-
-}
+        font-size: 10px;
+        color:$verdeAqua; 
+        background-color:$grisOscuro;
+    }
 
 @media only screen and (min-width:1000px) {
 
     .footer {
             font-size: 12px;
-        
         }
     }
 
 /*tablas y formularios*/
 
 .table {
-    padding:30px; 
-    word-spacing: 10px;
-    background-color:$verdeOscuro;
-}
+        padding:30px; 
+        word-spacing: 10px;
+        background-color:$verdeOscuro;
+    }
 
 table ol {
-    list-style-type: none;
-}
+        list-style-type: none;
+    }
 
 table ul {
-    list-style-type: none;
+        list-style-type: none;
 }
 
 th {
@@ -201,93 +198,84 @@ th {
 }
 
 td {
-
     color:$blanco;
 }
 
 /*especiales*/
 
 .jumbotron {
-    margin:40px;
-}
+            margin:40px;
+        }
 
 .jumbotron__titulo {
-    font-size: 45px;
-}
+                    font-size: 45px;
+                }
 
 .maps {
-    color:$verdeAqua; 
-}
+        color:$verdeAqua; 
+    }
 
 .botonAlert {
-    font-size: 16px;
-    margin-left:50px;
-    margin-right:50px;
-}
+            font-size: $letraMedia;
+            margin-left:50px;
+            margin-right:50px;
+        }
 
 .botonesFormulario{
-    margin-top: 10px;
-}
+                    margin-top: 10px;
+                }
 
 @media only screen and (min-width:1000px) {
 
     .botonAlert {
-        font-size: 20px;
-        }
+                font-size: 20px;
+            }
     }
 
 
 #handMade {
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 15px;
-    font-size: 35px;
-    text-shadow: 4px 4px #79A4A4;
-    border-bottom: #d1d4dc solid 10px;
-    margin: 10px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 15px;
+            font-size: 35px;
+            text-shadow: 4px 4px $verdeOscuro;
+            border-bottom: $grisClaro solid 10px;
+            margin: 10px;
 }
 
 @media only screen and (min-width:768px) {
 
-#handMade {  
-            text-align: center;
-            text-transform: uppercase;
-            letter-spacing: 30px;
-            font-size: 70px;
-            text-shadow: 4px 4px #79A4A4;
-            border-bottom: #d1d4dc solid 10px;
-            margin-left: 30px;
-            margin-right: 30px;
-        }
+    #handMade {  
+                letter-spacing: 30px;
+                font-size: 70px;
+                margin-left: 30px;
+                margin-right: 30px;
+            }
     }
 
 @media only screen and (min-width:1000px) {
 
     #handMade {  
-            text-align: center;
-            text-transform: uppercase;
-            letter-spacing: 30px;
-            font-size: 140px;
-            text-shadow: 4px 4px #79A4A4;
-            border-bottom: #d1d4dc solid 10px;
-            margin-left: 30px;
-            margin-right: 30px;
-        }
+                letter-spacing: 30px;
+                font-size: 140px;
+                margin-left: 30px;
+                margin-right: 30px;
+            }   
     }
     
 .map__article {
-        font-size: 20px;
-        line-height: 40px;
-    }    
+                font-size: 20px;
+                line-height: 40px;
+            }    
 
 .map__items ul li{
-        list-style-type:circle;
-    }
+                    list-style-type:circle;
+                }
 
 .map a {
-        color:#79A4A4;
+        color: $verdeOscuro;
     }
 
 .map li {
-        color:coral;
+        color: $coral;
     }
