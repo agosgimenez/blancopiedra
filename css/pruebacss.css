@@ -651,9 +651,7 @@ td {
 
 @media only screen and (min-width: 1000px) {
   .fotoCard {
-    min-height: 250px; }
-  .fotoCard2 {
-    min-height: 500px; } }
+    min-height: 250px; } }
 
 .fotoPaletas {
   width: 300px;
@@ -850,7 +848,7 @@ td {
   .gridGallery {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto;
     gap: 10px 10px;
     grid-template-areas: "gridTazas gridVasos gridSets gridSets" "gridMates gridBowls gridSets gridSets" "gridPlatos gridPlatos gridBandejas gridBandejas" "gridPlatos gridPlatos gridPortaUtensillos gridPortaUtensillos" "gridObjetos gridObjetos gridMacetas gridFloreros"; }
   .gridGallery__gridTazas {
