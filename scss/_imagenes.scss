@@ -46,11 +46,21 @@
 .fotoEnvio{
             background-size: cover;
             background-position:center;
-            width: 600px;
-            height: 350px;
-            min-width: 160px;
-            min-height: 80px;
+            width: 300px;
+            height: 300px;
+            padding: 10px;
+            margin-bottom: 20px;
+            margin-left: 0px;
         }
+
+@media only screen and (min-width: 1000px) {
+       
+    .fotoEnvio{
+        margin-bottom: 20px;
+        margin-left: 150px;
+    }
+
+}
 
 .fotoPagos {
             background-size: cover;

@@ -113,7 +113,7 @@ h3 {
     font-weight: lighter; 
     padding-top: 15px;
     padding-bottom: 5px;
-    color: $grisOscuro;
+    color: $coral;
 }
 
 @media only screen and (min-width:1000px) {
@@ -164,14 +164,14 @@ a:active {
 /*footer*/
 
 .footer {
-        font-size: 10px;
+        font-size: 8px;
         color:$verdeAqua; 
         background-color:$grisOscuro;
     }
 
 @media only screen and (min-width:1000px) {
 
-    .footer {
+    .footer p {
             font-size: 12px;
         }
     }
@@ -201,7 +201,7 @@ td {
     color:$blanco;
 }
 
-/*especiales*/
+/*TIPOGRAFIAS ESPECIALES*/
 
 .jumbotron {
             margin:40px;
@@ -216,9 +216,7 @@ td {
     }
 
 .botonAlert {
-            font-size: $letraMedia;
-            margin-left:50px;
-            margin-right:50px;
+            font-size: 12px;
         }
 
 .botonesFormulario{
@@ -228,7 +226,17 @@ td {
 @media only screen and (min-width:1000px) {
 
     .botonAlert {
-                font-size: 20px;
+                font-size: 14px;
+                margin-left:10px;
+                margin-right:120px;
+            }
+    }
+                
+
+@media only screen and (min-width:1000px) {
+
+    .botonAlert {
+                font-size: 14px;
             }
     }
 
@@ -279,3 +287,7 @@ td {
 .map li {
         color: $coral;
     }
+
+.form-control {
+    text-align: center;
+}

@@ -24,61 +24,59 @@ $verdePetroleo: teal;
 /*GRID GALERIA DE INDEX*/
 
 .gridGallery {
-              display: grid;
-              grid-template-columns: 1fr 1fr;
-              grid-template-rows: auto auto auto auto auto auto auto;
-              gap: 10px 10px;
-              grid-template-areas:
-                "gridTazas gridVasos"
-                "gridMates gridBowls"
-                "gridSets gridSets"
-                "gridPlatos gridPlatos"
-                "gridBandejas gridPortaUtensillos"
-                "gridObjetos gridObjetos"
-                "gridMacetas gridFloreros";
-              justify-content:center;
-              justify-items: stretch;
-              align-items: stretch;
-              margin:10px;
-            }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto auto auto;
+  gap: 10px 10px;
+  grid-template-areas:
+    "gridTazas gridVasos"
+    "gridMates gridBowls"
+    "gridSets gridSets"
+    "gridPlatos gridPlatos"
+    "gridBandejas gridPortaUtensillos"
+    "gridObjetos gridObjetos"
+    "gridMacetas gridFloreros";
+  justify-content:center;
+  justify-items: stretch;
+  align-items: stretch;
+  margin:10px;
+}
 
 .gridGallery__gridTazas { grid-area: gridTazas; }
 .gridGallery__gridVasos { grid-area: gridVasos; }
-.gridGallery__gridSets { grid-area: gridSets; }
+.gridGallery__gridSets { grid-area: gridSets; min-height: 200px; }
 .gridGallery__gridMates { grid-area: gridMates; }
 .gridGallery__gridBowls { grid-area: gridBowls; }
 .gridGallery__gridBandejas { grid-area: gridBandejas; }
 .gridGallery__gridPortaUtensillos { grid-area: gridPortaUtensillos; }
-.gridGallery__gridPlatos { grid-area: gridPlatos; }
+.gridGallery__gridPlatos { grid-area: gridPlatos; min-height: 200px; }
 .gridGallery__gridObjetos { grid-area: gridObjetos; }
 .gridGallery__gridMacetas { grid-area: gridMacetas; }
 .gridGallery__gridFloreros { grid-area: gridFloreros; }
-  
+
 .gridGallery__descrip {
-                    position: relative;
-                    top: 30%;
-                    width:100%;
-                    text-align: center;
-                    font-size: 22px;
-                    text-shadow: 2px 2px $grisOscuro; 
-                    color:$blanco;
+  position: relative;
+  top: 30%;
+  text-align: center;
+  font-size: 22px;
+  color: $blanco;
+  text-shadow: 2px 2px $grisOscuro;
 }
 
 @media only screen and (min-width:1000px) {
 
-  .gridGallery {
-              display: grid;
-              grid-template-columns: 1fr 1fr 1fr 1fr;
-              grid-template-rows: auto auto auto auto auto auto auto;
-              gap: 10px 10px;
-              grid-template-areas:
-                "gridTazas gridVasos gridSets gridSets"
-                "gridMates gridBowls gridSets gridSets"
-                "gridPlatos gridPlatos gridBandejas gridBandejas"
-                "gridPlatos gridPlatos gridPortaUtensillos gridPortaUtensillos"
-                "gridObjetos gridObjetos gridMacetas gridFloreros";
-            }
-
+.gridGallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px 10px;
+  grid-template-areas:
+    "gridTazas gridVasos gridSets gridSets"
+    "gridMates gridBowls gridSets gridSets"
+    "gridPlatos gridPlatos gridBandejas gridBandejas"
+    "gridPlatos gridPlatos gridPortaUtensillos gridPortaUtensillos"
+    "gridObjetos gridObjetos gridMacetas gridFloreros";
+}
 .gridGallery__gridTazas { grid-area: gridTazas; }
 .gridGallery__gridVasos { grid-area: gridVasos; }
 .gridGallery__gridMates { grid-area: gridMates; }
@@ -90,18 +88,14 @@ $verdePetroleo: teal;
 .gridGallery__gridMacetas { grid-area: gridMacetas; }
 .gridGallery__gridObjetos { grid-area: gridObjetos; }
 .gridGallery__gridFloreros { grid-area: gridFloreros; }
-  
+
 .gridGallery__descrip {
-    position: relative;
-    top: 45%;
-    width:100%;
-    text-align: center;
-    font-size: 50px;
-    text-shadow: 2px 2px $grisOscuro
+  position: relative;
+  top: 50%;
+  text-align: center;
+  font-size: 50px;
 }
-
 }
-
 
   /*GRID ENCARGOS*/
 
@@ -131,7 +125,7 @@ $verdePetroleo: teal;
 
 .encargo__formulario {
                       grid-area: encargo__formulario; 
-                      background-color: $grisOscuro;
+                      background-color: $verdeOscuro;
                       color: $blanco; 
                       padding: 10px; 
                     }

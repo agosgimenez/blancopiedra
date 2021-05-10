@@ -21,8 +21,8 @@ body {
 /*BEM HEADER*/
 .header {
   width: 100%;
-  height: 60px;
-  min-height: 95px;
+  height: 70px;
+  min-height: 75px;
   margin-top: 0px;
   text-align: center;
   background-image: linear-gradient(#f3f4f6, #d1d4dc);
@@ -30,8 +30,10 @@ body {
   z-index: 2; }
 
 .header__img__logo {
-  width: 50px;
-  min-width: 100px;
+  width: 100%;
+  height: 50px;
+  padding: 5px;
+  margin-bottom: 5px;
   transition: all 1s; }
 
 .header__img__logo:hover {
@@ -39,19 +41,19 @@ body {
 
 @media only screen and (min-width: 768px) {
   .header {
-    height: 130px; }
+    height: 100px; }
   .header__img__logo {
-    width: 120px;
-    min-width: 100px;
+    width: 100%;
+    height: 70px;
+    padding: 5px;
+    margin-bottom: 10px;
     transition: all 1s; } }
 
 @media only screen and (min-width: 1000px) {
   .header {
-    height: 190px; }
+    height: 100px; }
   .header__img__logo {
-    width: 180px;
-    min-width: 100px;
-    transition: all 1s; } }
+    height: 70px; } }
 
 /*--menu de navegacion--*/
 .navegacion {
@@ -88,17 +90,14 @@ body {
   display: inline-block; }
 
 .menu li a {
-  display: block;
   padding-left: 20px;
   padding-right: 20px; }
 
 .subMenu {
+  width: 100%;
   position: absolute;
-  display: none;
-  top: 30px; }
-
-.subMenu:hover {
-  display: block; }
+  top: 30px;
+  visibility: hidden; }
 
 .subMenu li {
   width: 100%;
@@ -116,7 +115,6 @@ body {
   padding: 8px; }
 
 .subMenu li a:hover {
-  display: block;
   color: coral; }
 
 /*--fin menú de nav--*/
@@ -160,7 +158,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding-top: 150px;
+  padding-top: 105px;
   padding-bottom: 10px;
   margin-left: 5px;
   margin-right: 5px; }
@@ -174,7 +172,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 145px;
+    padding-top: 110px;
     padding-bottom: 10px;
     margin-left: 5px;
     margin-right: 5px; }
@@ -187,24 +185,24 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 220px;
+    padding-top: 120px;
     padding-bottom: 10px;
     margin-left: 5px;
     margin-right: 5px; }
   .main__video__edit {
-    width: 1000px;
+    width: 100%;
     max-width: 1200px; } }
 
 /*SECTIONS*/
 .section1 {
   width: 100%;
-  padding-top: 160px;
+  padding-top: 105px;
   text-align: center; }
 
 @media only screen and (min-width: 1000px) {
   .section1 {
     width: 100%;
-    padding-top: 240px;
+    padding-top: 110px;
     text-align: center; } }
 
 .section2 {
@@ -432,7 +430,7 @@ body {
   padding: 10px; }
 
 .sobreBP__texto {
-  background-color: #40454f;
+  background-color: #A6A6A6;
   color: #f3f4f6; }
 
 .sobreBP__destacado {
@@ -514,7 +512,7 @@ h3 {
   font-weight: lighter;
   padding-top: 15px;
   padding-bottom: 5px;
-  color: #40454f; }
+  color: coral; }
 
 @media only screen and (min-width: 1000px) {
   h3 {
@@ -550,12 +548,12 @@ a:active {
 
 /*footer*/
 .footer {
-  font-size: 10px;
+  font-size: 8px;
   color: #C2D6D6;
   background-color: #40454f; }
 
 @media only screen and (min-width: 1000px) {
-  .footer {
+  .footer p {
     font-size: 12px; } }
 
 /*tablas y formularios*/
@@ -577,7 +575,7 @@ th {
 td {
   color: #f3f4f6; }
 
-/*especiales*/
+/*TIPOGRAFIAS ESPECIALES*/
 .jumbotron {
   margin: 40px; }
 
@@ -588,16 +586,20 @@ td {
   color: #C2D6D6; }
 
 .botonAlert {
-  font-size: 16px;
-  margin-left: 50px;
-  margin-right: 50px; }
+  font-size: 12px; }
 
 .botonesFormulario {
   margin-top: 10px; }
 
 @media only screen and (min-width: 1000px) {
   .botonAlert {
-    font-size: 20px; } }
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 120px; } }
+
+@media only screen and (min-width: 1000px) {
+  .botonAlert {
+    font-size: 14px; } }
 
 #handMade {
   text-align: center;
@@ -635,6 +637,9 @@ td {
 .map li {
   color: coral; }
 
+.form-control {
+  text-align: center; }
+
 /*IMAGENES*/
 /*imagenes en footer*/
 .footer img {
@@ -670,10 +675,16 @@ td {
 .fotoEnvio {
   background-size: cover;
   background-position: center;
-  width: 600px;
-  height: 350px;
-  min-width: 160px;
-  min-height: 80px; }
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-left: 0px; }
+
+@media only screen and (min-width: 1000px) {
+  .fotoEnvio {
+    margin-bottom: 20px;
+    margin-left: 150px; } }
 
 .fotoPagos {
   background-size: cover;
@@ -809,7 +820,8 @@ td {
   grid-area: gridVasos; }
 
 .gridGallery__gridSets {
-  grid-area: gridSets; }
+  grid-area: gridSets;
+  min-height: 200px; }
 
 .gridGallery__gridMates {
   grid-area: gridMates; }
@@ -824,7 +836,8 @@ td {
   grid-area: gridPortaUtensillos; }
 
 .gridGallery__gridPlatos {
-  grid-area: gridPlatos; }
+  grid-area: gridPlatos;
+  min-height: 200px; }
 
 .gridGallery__gridObjetos {
   grid-area: gridObjetos; }
@@ -838,17 +851,16 @@ td {
 .gridGallery__descrip {
   position: relative;
   top: 30%;
-  width: 100%;
   text-align: center;
   font-size: 22px;
-  text-shadow: 2px 2px #40454f;
-  color: #f3f4f6; }
+  color: #f3f4f6;
+  text-shadow: 2px 2px #40454f; }
 
 @media only screen and (min-width: 1000px) {
   .gridGallery {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     gap: 10px 10px;
     grid-template-areas: "gridTazas gridVasos gridSets gridSets" "gridMates gridBowls gridSets gridSets" "gridPlatos gridPlatos gridBandejas gridBandejas" "gridPlatos gridPlatos gridPortaUtensillos gridPortaUtensillos" "gridObjetos gridObjetos gridMacetas gridFloreros"; }
   .gridGallery__gridTazas {
@@ -875,11 +887,9 @@ td {
     grid-area: gridFloreros; }
   .gridGallery__descrip {
     position: relative;
-    top: 45%;
-    width: 100%;
+    top: 50%;
     text-align: center;
-    font-size: 50px;
-    text-shadow: 2px 2px #40454f; } }
+    font-size: 50px; } }
 
 /*GRID ENCARGOS*/
 .gridEncargos {
@@ -897,7 +907,7 @@ td {
 
 .encargo__formulario {
   grid-area: encargo__formulario;
-  background-color: #40454f;
+  background-color: #79A4A4;
   color: #f3f4f6;
   padding: 10px; }
 
