@@ -210,7 +210,7 @@ body {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  margin: 10px 20px 10px 20px; }
+  margin: 10px 50px 10px 50px; }
 
 /*BEM GALERIA HORIZONTAL*/
 .galeriaHorizontal {
@@ -458,6 +458,38 @@ body {
     margin-bottom: 50px;
     text-align: center; } }
 
+/*BEM VAJILLA Y DECO*/
+.sectionGaleria {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 80px; }
+
+.galeria__card1 {
+  width: 300px;
+  height: 280px;
+  margin: 30px; }
+
+.galeria__card2 {
+  width: 300px;
+  height: 280px;
+  margin: 30px; }
+
+@media only screen and (min-width: 768px) {
+  .galeria__card1 {
+    width: 350px;
+    height: 260px; }
+  .galeria__card2 {
+    width: 720px;
+    height: 250px; } }
+
+@media only screen and (min-width: 1000px) {
+  .galeria__card1 {
+    width: 250px;
+    height: 350px; }
+  .galeria__card2 {
+    width: 1030px;
+    height: 260px; } }
+
 /*TIPOGRAFIA*/
 /*FUENTES , TAMAÑO, COLORES DE TIPOGRAFIA*/
 /*variables*/
@@ -685,6 +717,11 @@ td {
   .fotoEnvio {
     margin-bottom: 20px;
     margin-left: 150px; } }
+
+.fotoProx {
+  max-width: 900px;
+  text-align: center;
+  min-width: 200px; }
 
 .fotoPagos {
   background-size: cover;
@@ -1079,23 +1116,6 @@ td {
 /*OPERACIONES PARA PAGINAS DE VAJILLA, DECO Y PRODUCTOS*/
 /*VARIABLES*/
 /*OPERACIONES SIMPLES*/
-.card1 {
-  width: 200px;
-  height: 300px; }
-
-.card2 {
-  width: 200px;
-  height: 305px; }
-
-/*CONDICIONALES PARA MEDIDAS DE PANTALLA*/
-.sectionGaleria .card1 {
-  width: 350px;
-  height: 260px; }
-
-.sectionGaleria .card2 {
-  width: 700px;
-  height: 200px; }
-
 /*CONDICIONALES PARA DESCUENTOS E INGRESOS DE PRODUCTOS*/
 .off {
   display: flex; }
@@ -1135,6 +1155,9 @@ td {
   font-size: 16px;
   letter-spacing: 2px; }
 
+.card-body--producto {
+  background-color: #f3f4f6; }
+
 .card-diseno {
   display: flex;
   flex-flow: row row nowrap;
@@ -1167,9 +1190,17 @@ td {
   flex-direction: row nowrap;
   justify-content: center; }
 
-.textoPrincipal {
-  margin-left: 40px;
-  margin-right: 40px; }
+.card-title {
+  background-color: #79A4A4;
+  color: #f3f4f6;
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 4px; }
+
+.card-text {
+  margin: 0px; }
 
 .disenos {
   display: flex;
@@ -1178,7 +1209,7 @@ td {
   margin-left: 40px;
   margin-right: 40px; }
 
-/*EACH*/
+/*EACH PRODUCTOS*/
 .geometria-card-body {
   background-image: url("../media/geometria.jpg");
   background-size: cover;
@@ -1203,7 +1234,7 @@ td {
   background-position: center;
   min-height: 250px; }
 
-/*FOR*/
+/*FOR PRODUCTOS*/
 .btn--1 {
   font-size: 8px; }
 
@@ -1215,13 +1246,20 @@ td {
 
 /*MAPS BOTONES*/
 .boton--info {
-  background-color: #40454f; }
+  background-color: #40454f;
+  color: #f3f4f6; }
 
 .boton--especial {
-  background-color: coral; }
+  background-color: coral;
+  color: #f3f4f6; }
 
 .boton--consulta {
-  background-color: #A6A6A6; }
+  background-color: #A6A6A6;
+  color: #f3f4f6; }
+
+.boton--comprar {
+  background-color: teal;
+  color: #f3f4f6; }
 
 .botonmargin--pequeno {
   margin: 10px; }

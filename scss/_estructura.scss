@@ -311,7 +311,7 @@ body {
             display:flex;
             flex-flow: column nowrap;
             justify-content:center;
-            margin:10px 20px 10px 20px;
+            margin:10px 50px 10px 50px;
         }
 
 
@@ -646,3 +646,53 @@ body {
                     text-align:center;
                 }
 }
+
+/*BEM VAJILLA Y DECO*/
+
+.sectionGaleria {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    margin-bottom: 80px;
+}
+
+.galeria__card1 {
+                width:300px;
+                height: 280px;
+                margin: 30px;
+}
+
+.galeria__card2 {
+                width: 300px;
+                height: 280px;
+                margin: 30px;
+}
+
+
+@media only screen and (min-width:768px) {
+
+    .galeria__card1 {
+                    width: 350px;
+                    height: 260px;
+    }
+
+    .galeria__card2 {
+                    width: 720px;
+                    height: 250px;
+    }
+
+}
+
+@media only screen and (min-width:1000px) {
+
+    .galeria__card1 {
+                    width: 250px;
+                    height: 350px;
+    }
+
+    .galeria__card2 {
+                    width: 1030px;
+                    height: 260px;
+    }
+
+}
+

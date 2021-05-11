@@ -24,54 +24,6 @@ $verdePetroleo: teal;
 
 /*OPERACIONES SIMPLES*/
 
-$galeriaProductos:768px;
-$cuadrante: 100px;
-
-
-.card1 {
-        width: $cuadrante*2;
-        height: $cuadrante*3;
-    }
-
-.card2 {
-        width: $cuadrante*2;
-        height:$cuadrante*3+5;
-    }
-
-
-/*CONDICIONALES PARA MEDIDAS DE PANTALLA*/
-
-.sectionGaleria {
-    @if $galeriaProductos ==768px {
-        .card1 {
-                width: $cuadrante*3+50;
-                height: $cuadrante*2+60;
-            }
-        .card2 {
-                width: $cuadrante*7;
-                height: $cuadrante*2;
-            }
-    } @else if $galeriaProductos <=768px {
-        .card1 {
-                width: $cuadrante*3;
-                height: $cuadrante*3;
-            }
-        .card2 {
-                width: $cuadrante*3;
-                height: $cuadrante*3+20;
-            }
-    } @else if $galeriaProductos >=768px {
-        .card1 {
-                width: $cuadrante*2+20;
-                height: $cuadrante*4;
-            }
-        .card2 {
-                width: $cuadrante*9;
-                height: $cuadrante*2;
-            }
-        }
-    }
-
 /*CONDICIONALES PARA DESCUENTOS E INGRESOS DE PRODUCTOS*/
 
 $liquidacion: true;
@@ -175,6 +127,10 @@ $ingreso: true;
             @include fondoOscuro;
         }
 
+.card-body--producto {
+                        background-color: $blanco;
+}
+
 .card-diseno{
             @extend .card-body;
             display:flex;
@@ -201,9 +157,16 @@ $ingreso: true;
                         justify-content: center;
                     }
 
-.textoPrincipal {
-                @include margenesCostados;
-            }
+.card-title {
+            @include fondoOscuro;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 4px;
+        }
+
+.card-text {
+            margin: 0px;
+}
 
 .btn {
         @extend .card;
@@ -215,10 +178,10 @@ $ingreso: true;
         justify-content:center;
         margin-left: 40px;
         margin-right:40px;
-        }
+    }
 
 
-/*EACH*/
+/*EACH PRODUCTOS*/
 
 @each $disenos in geometria, flora, totalcolor, franjas {
     .#{$disenos}-card-body {
@@ -229,7 +192,7 @@ $ingreso: true;
     }
 }
 
-/*FOR*/
+/*FOR PRODUCTOS*/
 
 @for $boton-size from 1 through 3 {
     .btn--#{$boton-size} {font-size:8px *$boton-size}
@@ -241,6 +204,7 @@ $botones: (
     info: $grisOscuro,
     especial:$coral,
     consulta:$grisMedio,
+    comprar: $verdePetroleo,
 );
 
 $botonmargin: (
@@ -254,6 +218,7 @@ $botonmargin: (
 @each $boton, $color in $botones {
     .boton--#{$boton} {
         background-color: $color;
+        color: $blanco;
     }
 }
 
@@ -262,5 +227,6 @@ $botonmargin: (
         margin: $margin;
     }
 }
+
 
 
