@@ -107,10 +107,11 @@ $ingreso: true;
 @mixin fondoClaro {
                     background-color: $blanco;
                     color:$grisOscuro;
-                    font: size 25px;
+                    font: size 24px;
                     text-shadow: $grisMedio;
                     height:45px;
                     text-align:center;
+                    padding: 5px;
                 }
 
 @mixin fondoMedio {
@@ -130,17 +131,6 @@ $ingreso: true;
 .card-body--producto {
                         background-color: $blanco;
 }
-
-.card-diseno{
-            @extend .card-body;
-            display:flex;
-            flex-flow:row row nowrap;
-            justify-content: center;
-            min-height:20px;
-            text-transform: uppercase;
-            padding-top:5px;
-            font-size:20px;
-        }
 
 .card {
         @include margenes1;
@@ -174,16 +164,14 @@ $ingreso: true;
 
 .disenos {
         display: flex;
-        flex-flow:column wrap;
+        flex-flow: row wrap;
         justify-content:center;
-        margin-left: 40px;
-        margin-right:40px;
     }
 
 
 /*EACH PRODUCTOS*/
 
-@each $disenos in geometria, flora, totalcolor, franjas {
+@each $disenos in geometria, calado, puntillismo, franjas, gotas {
     .#{$disenos}-card-body {
         background-image:url('../media/#{$disenos}.jpg');
         background-size:cover;

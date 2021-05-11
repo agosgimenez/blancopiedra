@@ -474,6 +474,11 @@ body {
   height: 280px;
   margin: 30px; }
 
+.galeria__card3 {
+  width: 350px;
+  height: 350px;
+  margin: 30px; }
+
 @media only screen and (min-width: 768px) {
   .galeria__card1 {
     width: 350px;
@@ -746,19 +751,23 @@ td {
   background-size: cover; }
 
 .fotoPaso1 {
-  background-image: url("../media/pasos.JPG");
+  background-image: url("../media/paso_1.jpg");
   background-size: cover; }
 
 .fotoPaso2 {
-  background-image: url("../media/pasos.JPG");
+  background-image: url("../media/paso_2.jpg");
   background-size: cover; }
 
 .fotoPaso3 {
-  background-image: url("../media/pasos.JPG");
+  background-image: url("../media/paso_3.jpg");
   background-size: cover; }
 
 .fotoPaso4 {
-  background-image: url("../media/pasos.JPG");
+  background-image: url("../media/paso_4.jpg");
+  background-size: cover; }
+
+.fotoPaso5 {
+  background-image: url("../media/paso_5.jpg");
   background-size: cover; }
 
 .fotoPaleta1 {
@@ -1149,7 +1158,7 @@ td {
   font-size: 16px; }
 
 /*MIXINS PARA LAS CARDS*/
-.card-body, .card-diseno {
+.card-body {
   background-color: #79A4A4;
   color: #f3f4f6;
   font-size: 16px;
@@ -1158,25 +1167,17 @@ td {
 .card-body--producto {
   background-color: #f3f4f6; }
 
-.card-diseno {
-  display: flex;
-  flex-flow: row row nowrap;
-  justify-content: center;
-  min-height: 20px;
-  text-transform: uppercase;
-  padding-top: 5px;
-  font-size: 20px; }
-
 .card, .btn {
   margin: 10px 5px 10px 5px; }
 
 .card-header {
   background-color: #f3f4f6;
   color: #40454f;
-  font: size 25px;
+  font: size 24px;
   text-shadow: #A6A6A6;
   height: 45px;
-  text-align: center; }
+  text-align: center;
+  padding: 5px; }
 
 .card-header--productos {
   background-color: #C2D6D6;
@@ -1204,10 +1205,8 @@ td {
 
 .disenos {
   display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  margin-left: 40px;
-  margin-right: 40px; }
+  flex-flow: row wrap;
+  justify-content: center; }
 
 /*EACH PRODUCTOS*/
 .geometria-card-body {
@@ -1216,20 +1215,26 @@ td {
   background-position: center;
   min-height: 250px; }
 
-.flora-card-body {
-  background-image: url("../media/flora.jpg");
+.calado-card-body {
+  background-image: url("../media/calado.jpg");
   background-size: cover;
   background-position: center;
   min-height: 250px; }
 
-.totalcolor-card-body {
-  background-image: url("../media/totalcolor.jpg");
+.puntillismo-card-body {
+  background-image: url("../media/puntillismo.jpg");
   background-size: cover;
   background-position: center;
   min-height: 250px; }
 
 .franjas-card-body {
   background-image: url("../media/franjas.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 250px; }
+
+.gotas-card-body {
+  background-image: url("../media/gotas.jpg");
   background-size: cover;
   background-position: center;
   min-height: 250px; }
