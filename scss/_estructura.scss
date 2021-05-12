@@ -63,7 +63,7 @@ body {
         background-image: linear-gradient($blanco, $grisClaro);
         position: fixed;
         z-index: 2;
-}
+    }
 
 .header__img__logo {
                     width:100%;
@@ -75,14 +75,14 @@ body {
 
 .header__img__logo:hover {
                         transform: scale(1.1,1.1);
-                        }
+                    }
 
 
 @media only screen and (min-width:768px) {
 
     .header {
             height: 100px;
-    }
+        }
 
     .header__img__logo {
                         width:100%;
@@ -97,7 +97,7 @@ body {
 
     .header {
             height: 100px;
-    }
+        }
 
     .header__img__logo {
                         height: 70px;
@@ -116,14 +116,14 @@ body {
             text-align:center;
             position:relative;
             bottom: 10px;
-}
+        }
 
 @media only screen and (min-width:768px) {
     
     .navegacion {
                 height: 30px;
                 font-size: 12px;
-    }
+            }
 
 }
 
@@ -132,7 +132,7 @@ body {
     .navegacion {
                 height: 30px;
                 font-size: 16px;
-    }
+            }
 
 }
 
@@ -140,7 +140,7 @@ body {
                 list-style-type: none;
                 justify-content: center;
                 align-content: center;
-}
+            }
 
 .menu  {
     background-color:#40454f;
@@ -150,29 +150,29 @@ body {
 .menu li  {
         position:relative;
         display: inline-block;
-}
+    }
 
 .menu li a {
             padding-left:20px;
             padding-right: 20px;
-}
+        }
 
 .subMenu {
         width: 100%;
         position:absolute;
         top: 30px;
         visibility:hidden;
-}
+    }
 
 .subMenu li {
             width: 100%;
             display:block;
-}
+        }
 
 .menu li:hover .subMenu {
                         display:block;
                         visibility:visible;
-}
+                    }
 
 .subMenu li a {
                 background-color:#f3f4f6;
@@ -180,11 +180,13 @@ body {
                 display:block;
                 margin-top: 1px;
                 padding: 8px;
-}
+            }
 
 .subMenu li a:hover {
                     color:coral;
-}
+                }
+
+
 /*--fin menú de nav--*/
 
 
@@ -210,8 +212,8 @@ body {
                     }
 
 .aside img:hover {
-                    transform:scale(1.5,1.5);
-                }
+                transform:scale(1.5,1.5);
+            }
 
 @media only screen and (min-width:768px) {
 
@@ -245,7 +247,7 @@ body {
         padding-bottom: 10px;
         margin-left:5px;
         margin-right:5px;
-}
+    }
 
 .main__video__edit {
                     width:100%;
@@ -262,7 +264,7 @@ body {
             padding-bottom: 10px;
             margin-left:5px;
             margin-right:5px;
-    }
+        }
 
     .main__video__edit {
                         width:700px;
@@ -294,7 +296,7 @@ body {
             width:100%;
             padding-top:105px;
             text-align: center;
-}
+        }
 
 @media only screen and (min-width:1000px) {
 
@@ -545,10 +547,10 @@ body {
             }
 
 .envios__6000 {
-            color: $magenta;
-            text-shadow: burlywood;
-            font-weight: lighter;
-        }
+                color: $magenta;
+                text-shadow: burlywood;
+                font-weight: lighter;
+            }
 
 .envios__foto {
                 text-align:center;
@@ -571,10 +573,10 @@ body {
                 }
 
 .pagos__foto {
-            text-align:center;
-            width:100%;
-            margin-bottom:20px;
-        }
+              text-align:center;
+              width:100%;
+              margin-bottom:20px;
+            }
 
 /*BEM FAQS*/
 
@@ -584,13 +586,13 @@ body {
     }
 
 .faqs__preguntas {
-                margin-top: 10px;
-                margin-bottom: 10px;
+                  margin-top: 10px;
+                  margin-bottom: 10px;
             }
 
 .faqs__respuestas {
-                    background-color: $verdeOscuro;
-                    color:$blanco;
+                   background-color: $verdeOscuro;
+                   color:$blanco;
                 }
 
 .faqs__foto1 {
@@ -606,14 +608,14 @@ body {
 @media only screen and (min-width:768px) {
 
     .faqs {
-        margin-top:20px 40px 20px 40px;
-        padding-top:40px;
-    }
+           margin-top:20px 40px 20px 40px;
+           padding-top:40px;
+        }
 
     .faqs__preguntas {
-                    margin-top: 30px;
-                    margin-bottom: 30px;
-                }
+                      margin-top: 30px;
+                      margin-bottom: 30px;
+                    }
 
     .faqs__respuestas {
                         background-color: $verdeOscuro;
@@ -621,17 +623,17 @@ body {
                     }
 
     .faqs__foto1 {
-                width:300px;
-                margin-top:30px;
-                margin-bottom: 30px; 
-            }
+                  width:300px;
+                  margin-top:30px;
+                  margin-bottom: 30px; 
+                }
 
     .faqs__foto2 {
-                display:flex;
-                width:300px;
-                margin-top:30px;
-                margin-bottom: 30px; 
-            }
+                  display:flex;
+                  width:300px;
+                  margin-top:30px;
+                  margin-bottom: 30px; 
+                }
 
 }
 
@@ -639,40 +641,40 @@ body {
 @media only screen and (min-width:1000px) {
 
     .faqs {
-        margin-top:20px 40px 20px 40px;
-        padding-top:40px;
-    }
+            margin-top:20px 40px 20px 40px;
+            padding-top:40px;
+        }
 
     .faqs__preguntas {
-                    margin-top: 40px;
-                    margin-bottom: 30px;
-                }
+                      margin-top: 40px;
+                      margin-bottom: 30px;
+                    }
 
     .faqs__respuestas {
-                        background-color: $verdeOscuro;
-                        color:$blanco;
+                       background-color: $verdeOscuro;
+                       color:$blanco;
                     }
 
     .faqs__foto1 {
-                width:400px;
-                margin-top:10px;
-            }
+                  width:400px;
+                  margin-top:10px;
+                }
 
     .faqs__foto2 {
-                display:flex;
-                width: 400px;
-                margin-bottom: 80px;
-                margin-top: 0px;
-            }
+                  display:flex;
+                  width: 400px;
+                  margin-bottom: 80px;
+                  margin-top: 0px;
+                }
     }
 
 /*BEM SOBRE BLANCO PIEDRA*/
 
 .sobreBP {
-        margin-left: 20px;
-        margin-right: 20px;
-        padding: 10px;
-    }
+          margin-left: 20px;
+          margin-right: 20px;
+          padding: 10px;
+        }
 
 .sobreBP__texto {
                 background-color: $grisMedio; 
@@ -717,28 +719,28 @@ body {
 /*BEM VAJILLA Y DECO*/
 
 .sectionGaleria {
-                    padding-left: 10px;
-                    padding-right: 10px;
-                    margin-bottom: 80px;
-}
+                 padding-left: 10px;
+                 padding-right: 10px;
+                 margin-bottom: 80px;
+            }
 
 .galeria__card1 {
                 width:300px;
                 height: 280px;
                 margin: 30px;
-}
+            }
 
 .galeria__card2 {
                 width: 300px;
                 height: 280px;
                 margin: 30px;
-}
+            }
 
 .galeria__card3 {
                 width: 350px;
                 height: 350px;
                 margin: 30px;   
-}
+            }
 
 
 @media only screen and (min-width:768px) {
@@ -746,12 +748,12 @@ body {
     .galeria__card1 {
                     width: 350px;
                     height: 260px;
-    }
+                }
 
     .galeria__card2 {
                     width: 720px;
                     height: 250px;
-    }
+                }
 
 }
 
@@ -760,12 +762,12 @@ body {
     .galeria__card1 {
                     width: 250px;
                     height: 350px;
-    }
+                }
 
     .galeria__card2 {
                     width: 1030px;
                     height: 260px;
-    }
+                }
 
 }
 

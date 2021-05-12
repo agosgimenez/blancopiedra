@@ -24,23 +24,23 @@ $verdePetroleo: teal;
 /*GRID GALERIA DE INDEX*/
 
 .gridGallery {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto auto auto auto auto auto;
-  gap: 10px 10px;
-  grid-template-areas:
-    "gridTazas gridVasos"
-    "gridMates gridBowls"
-    "gridSets gridSets"
-    "gridPlatos gridPlatos"
-    "gridBandejas gridPortaUtensillos"
-    "gridObjetos gridObjetos"
-    "gridMacetas gridFloreros";
-  justify-content:center;
-  justify-items: stretch;
-  align-items: stretch;
-  margin:10px;
-}
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              grid-template-rows: auto auto auto auto auto auto auto;
+              gap: 10px 10px;
+              grid-template-areas:
+                "gridTazas gridVasos"
+                "gridMates gridBowls"
+                "gridSets gridSets"
+                "gridPlatos gridPlatos"
+                "gridBandejas gridPortaUtensillos"
+                "gridObjetos gridObjetos"
+                "gridMacetas gridFloreros";
+              justify-content:center;
+              justify-items: stretch;
+              align-items: stretch;
+              margin:10px;
+            }
 
 .gridGallery__gridTazas { grid-area: gridTazas; }
 .gridGallery__gridVasos { grid-area: gridVasos; }
@@ -55,28 +55,29 @@ $verdePetroleo: teal;
 .gridGallery__gridFloreros { grid-area: gridFloreros; }
 
 .gridGallery__descrip {
-  position: relative;
-  top: 30%;
-  text-align: center;
-  font-size: 22px;
-  color: $blanco;
-  text-shadow: 2px 2px $grisOscuro;
-}
+                        position: relative;
+                        top: 30%;
+                        text-align: center;
+                        font-size: 22px;
+                        color: $blanco;
+                        text-shadow: 2px 2px $grisOscuro;
+                    }
 
 @media only screen and (min-width:1000px) {
 
 .gridGallery {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  gap: 10px 10px;
-  grid-template-areas:
-    "gridTazas gridVasos gridSets gridSets"
-    "gridMates gridBowls gridSets gridSets"
-    "gridPlatos gridPlatos gridBandejas gridBandejas"
-    "gridPlatos gridPlatos gridPortaUtensillos gridPortaUtensillos"
-    "gridObjetos gridObjetos gridMacetas gridFloreros";
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr 1fr;
+              grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+              gap: 10px 10px;
+              grid-template-areas:
+                "gridTazas gridVasos gridSets gridSets"
+                "gridMates gridBowls gridSets gridSets"
+                "gridPlatos gridPlatos gridBandejas gridBandejas"
+                "gridPlatos gridPlatos gridPortaUtensillos gridPortaUtensillos"
+                "gridObjetos gridObjetos gridMacetas gridFloreros";
 }
+
 .gridGallery__gridTazas { grid-area: gridTazas; }
 .gridGallery__gridVasos { grid-area: gridVasos; }
 .gridGallery__gridMates { grid-area: gridMates; }
@@ -90,16 +91,16 @@ $verdePetroleo: teal;
 .gridGallery__gridFloreros { grid-area: gridFloreros; }
 
 .gridGallery__descrip {
-  position: relative;
-  top: 50%;
-  text-align: center;
-  font-size: 50px;
-}
+                      position: relative;
+                      top: 50%;
+                      text-align: center;
+                      font-size: 50px;
+                    }
 }
 
   /*GRID ENCARGOS*/
 
-  .gridEncargos {
+.gridEncargos {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 grid-template-rows: 0.2fr 1fr 1fr 0.5fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
@@ -133,12 +134,12 @@ $verdePetroleo: teal;
 .encargo__texto2 { grid-area: encargo__texto2;}
 
 .paleta1 { 
-        grid-area: paleta1; 
-        margin-top:10px; 
-        margin-bottom:10px;
-        display:flex; 
-        flex-direction:row; 
-        justify-content: center;
+          grid-area: paleta1; 
+          margin-top:10px; 
+          margin-bottom:10px;
+          display:flex; 
+          flex-direction:row; 
+          justify-content: center;
       }
 
 .paleta2 {
@@ -263,6 +264,7 @@ $verdePetroleo: teal;
             margin-left: 20px; 
             margin-right:20px; 
           }
+          
 .contactoWeb { grid-area: contactoWeb; }
 
 .contactoRedes { grid-area: contactoRedes; }
