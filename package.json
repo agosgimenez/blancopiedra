@@ -1,7 +1,7 @@
 {
-  "name": "repositorio",
+  "name": "repositorio_blanco_piedra",
   "version": "1.0.0",
-  "description": "",
+  "description": "sitio web empleado para dar a conocer trabajo en cerámica artesanal y que a futuro sirva como e-commerce",
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
@@ -17,7 +17,7 @@
     "type": "git",
     "url": "git+https://github.com/agosgimenez/repositorioblancopiedra.git"
   },
-  "author": "",
+  "author": "agostina gimenez",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/agosgimenez/repositorioblancopiedra/issues"
