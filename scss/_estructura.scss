@@ -579,13 +579,13 @@ body {
 /*BEM FAQS*/
 
 .faqs {
-    margin-top:20px;
-    margin-bottom: 20px;
+        margin-top:20px 40px 20px 40px;
+        padding-top:5px;
     }
 
 .faqs__preguntas {
-                margin-top: 30px;
-                margin-bottom: 30px;
+                margin-top: 10px;
+                margin-bottom: 10px;
             }
 
 .faqs__respuestas {
@@ -593,11 +593,78 @@ body {
                     color:$blanco;
                 }
 
-.faqs__foto {
-            text-align:center;
-            width: 300px;
-            margin-bottom:20px;
-        }
+.faqs__foto1 {
+              width:300px;
+              margin-top:10px;
+            }
+    
+.faqs__foto2 {
+              display:none;
+            }
+
+
+@media only screen and (min-width:768px) {
+
+    .faqs {
+        margin-top:20px 40px 20px 40px;
+        padding-top:40px;
+    }
+
+    .faqs__preguntas {
+                    margin-top: 30px;
+                    margin-bottom: 30px;
+                }
+
+    .faqs__respuestas {
+                        background-color: $verdeOscuro;
+                        color:$blanco;
+                    }
+
+    .faqs__foto1 {
+                width:300px;
+                margin-top:30px;
+                margin-bottom: 30px; 
+            }
+
+    .faqs__foto2 {
+                display:flex;
+                width:300px;
+                margin-top:30px;
+                margin-bottom: 30px; 
+            }
+
+}
+
+
+@media only screen and (min-width:1000px) {
+
+    .faqs {
+        margin-top:20px 40px 20px 40px;
+        padding-top:40px;
+    }
+
+    .faqs__preguntas {
+                    margin-top: 40px;
+                    margin-bottom: 30px;
+                }
+
+    .faqs__respuestas {
+                        background-color: $verdeOscuro;
+                        color:$blanco;
+                    }
+
+    .faqs__foto1 {
+                width:400px;
+                margin-top:10px;
+            }
+
+    .faqs__foto2 {
+                display:flex;
+                width: 400px;
+                margin-bottom: 80px;
+                margin-top: 0px;
+            }
+    }
 
 /*BEM SOBRE BLANCO PIEDRA*/
 
