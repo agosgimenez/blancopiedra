@@ -1,18 +1,13 @@
 
 /*variables*/
-$letraXl: 16px;
 
-$letraMedia: 18px;
+$espacio10: 10px;
 
-$letraXxl: 24px;
+$espacio20: 20px;
 
-$letraSpace: 5px; 
+$espacio30: 30px;
 
-$oracionSpace: 20px;
-
-$palabraSpace: 8px;
-
-$spaceInputs: 15px;
+$espacio40: 40px;
 
 $coral:coral;
 
@@ -27,7 +22,7 @@ $verdePetroleo: teal;
               display: grid;
               grid-template-columns: 1fr 1fr;
               grid-template-rows: auto auto auto auto auto auto auto;
-              gap: 10px 10px;
+              gap: $espacio10 $espacio10;
               grid-template-areas:
                 "gridTazas gridVasos"
                 "gridMates gridBowls"
@@ -39,7 +34,7 @@ $verdePetroleo: teal;
               justify-content:center;
               justify-items: stretch;
               align-items: stretch;
-              margin:10px;
+              margin:$espacio10;
             }
 
 .gridGallery__gridTazas { grid-area: gridTazas; }
@@ -56,12 +51,20 @@ $verdePetroleo: teal;
 
 .gridGallery__descrip {
                         position: relative;
-                        top: 30%;
+                        top: 45%;
                         text-align: center;
-                        font-size: 22px;
+                        font-size: 25px;
                         color: $blanco;
                         text-shadow: 2px 2px $grisOscuro;
                     }
+
+@media only screen and (min-width:768px) {
+
+  .gridGallery__descrip {
+                          font-size: 40px;
+                      }
+
+}
 
 @media only screen and (min-width:1000px) {
 
@@ -69,7 +72,7 @@ $verdePetroleo: teal;
               display: grid;
               grid-template-columns: 1fr 1fr 1fr 1fr;
               grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-              gap: 10px 10px;
+              gap: $espacio10 $espacio10;
               grid-template-areas:
                 "gridTazas gridVasos gridSets gridSets"
                 "gridMates gridBowls gridSets gridSets"
@@ -91,150 +94,11 @@ $verdePetroleo: teal;
 .gridGallery__gridFloreros { grid-area: gridFloreros; }
 
 .gridGallery__descrip {
-                      position: relative;
-                      top: 50%;
-                      text-align: center;
+                      top: 40%;
                       font-size: 50px;
                     }
 }
 
-  /*GRID ENCARGOS*/
-
-.gridEncargos {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: 0.2fr 1fr 1fr 0.5fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
-                gap: 10px 10px;
-                grid-template-areas:
-                  "encargo__texto encargo__texto"
-                  "encargo__formulario encargo__formulario"
-                  "encargo__formulario encargo__formulario"
-                  "encargo__texto2 encargo__texto2"
-                  "paleta1 paleta1"
-                  "paleta2 paleta2"
-                  "paleta3 paleta3"
-                  "paleta4 paleta4"
-                  "paleta5 paleta5";
-                  margin: 20px 20px;
-              }
-
-.encargo__texto { 
-                  grid-area: encargo__texto; 
-                  font-size: 18px; 
-                  color:$grisOscuro;
-                }
-
-.encargo__formulario {
-                      grid-area: encargo__formulario; 
-                      background-color: $verdeOscuro;
-                      color: $blanco; 
-                      padding: 10px; 
-                    }
-
-.encargo__texto2 { grid-area: encargo__texto2;}
-
-.paleta1 { 
-          grid-area: paleta1; 
-          margin-top:10px; 
-          margin-bottom:10px;
-          display:flex; 
-          flex-direction:row; 
-          justify-content: center;
-      }
-
-.paleta2 {
-          grid-area: paleta2; 
-          margin-top:10px; 
-          margin-bottom:10px;
-          display:flex; 
-          flex-direction:row; 
-          justify-content: center;
-        }
-
-.paleta3 { 
-        grid-area: paleta3; 
-        margin-top:10px; 
-        margin-bottom:10px;
-        display:flex; 
-        flex-direction:row; 
-        justify-content: center;
-      }
-
-.paleta4 { 
-        grid-area: paleta4; 
-        margin-top:10px; 
-        margin-bottom:10px;
-        display:flex; 
-        flex-direction:row; 
-        justify-content: center;
-      }
-
-.paleta5 { 
-        grid-area: paleta5; 
-        margin-top:10px; 
-        margin-bottom:10px;
-        display:flex; 
-        flex-direction:row; 
-        justify-content: center;
-      }
-
-.encargo__pedido { 
-                line-height: 20px;
-                margin-top:20px;
-                margin-left: 10px;
-                margin-right: 10px;
-            }
-
-.encargo__legend {
-                text-transform: uppercase;
-                text-shadow: 3px 3px #40454f;
-                font-size: 20px;
-            }
-
-.encargo__detalles {
-                font-weight: bold;
-                font-size: 16px;
-                text-transform: uppercase;
-                letter-spacing: 4px;
-            }
-
-
-@media only screen and (min-width: 768px) {
-
-  .encargo__formulario { 
-                      margin-left: 50px;
-                      margin-right: 50px;
-                    }
-
-  .encargo__pedido { 
-                  line-height: 20px;
-                  margin-top:20px;
-                  margin-left: 60px;
-                  margin-right: 60px;
-              }
-
-}
-
-@media only screen and (min-width: 1000px) {
-
-  .encargo__texto {
-                  font-size: 20px;
-                }
-
-  .encargo__formulario {
-                      margin-left: 200px;
-                      margin-right: 200px;
-                    }
-
-  .encargo__pedido { 
-                    line-height: 20px;
-                    margin-top:20px;
-                    margin-left: 200px;
-                    margin-right: 200px;
-                }
-
-
-}
 
 /*GRID CONTACTO*/
 
@@ -242,7 +106,7 @@ $verdePetroleo: teal;
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 grid-template-rows: 1fr 0.5fr 0.2fr 0.2fr;
-                gap: 20px 20px;
+                gap: $espacio20 $espacio20;
                 grid-template-areas:
                   "contactoForm contactoForm"
                   "contactoMap contactoMap"
@@ -250,19 +114,19 @@ $verdePetroleo: teal;
                   "contactoRedes contactoRedes";
                 justify-content: center;
                 align-content: center;
-                margin:10px;
+                margin:$espacio10;
               }
 
 .contactoForm { 
               grid-area: contactoForm; 
-              background-color: $verdeOscuro;
-              color: $blanco; padding: 10px; 
+              background-color:#79a4a4a9;
+              padding: $espacio10; 
             }
 
 .contactoMap { 
             grid-area: contactoMap; 
-            margin-left: 20px; 
-            margin-right:20px; 
+            margin-left: $espacio20; 
+            margin-right:$espacio20; 
           }
           
 .contactoWeb { grid-area: contactoWeb; }
@@ -272,7 +136,7 @@ $verdePetroleo: teal;
 .contacto__visitRedes {
                       color:coral;
                       font-size:20px;
-                      padding-top:10px;
+                      padding-top:$espacio10;
                       margin:5px;
                       font-style: oblique;
                       text-transform: uppercase;
@@ -282,8 +146,8 @@ $verdePetroleo: teal;
                           width: 70px;
                           text-align: center; 
                           display:inline;
-                          padding:10px;
-                          margin-bottom: 20px;
+                          padding:$espacio10;
+                          margin-bottom: $espacio20;
                           transition: 1s;
                         }
 
@@ -293,24 +157,11 @@ $verdePetroleo: teal;
 
 .contacto__pregunta {
                     line-height: 38px;
-                    margin-top:20px;
-                  }
-
-.contacto__legend {
-                  text-transform: uppercase;
-                  text-shadow: 3px 3px #40454f;
-                  font-size: 20px;
-                }
-
-.contacto__consulta {
-                    font-weight: bold;
-                    font-size: 16px;
-                    text-transform: uppercase;
-                    letter-spacing: 4px;
+                    margin-top:$espacio20;
                   }
 
 .contacto__iframe {
-                  margin-top:20px;
+                  margin-top:$espacio20;
                   width:100%;
                   min-height:200px;
                 }
@@ -318,10 +169,11 @@ $verdePetroleo: teal;
 @media only screen and (min-width:768px) {
  
   .contacto__iframe {
-                    margin-top:20px;
+                    margin-top:$espacio20;
                     width:600px;
                     min-height:300px;
                   }
+}  
 
   @media only screen and (min-width: 1000px) {
 
@@ -331,9 +183,8 @@ $verdePetroleo: teal;
                 }
 
     .contacto__iframe {
-                      margin-top:20px;
+                      margin-top:$espacio20;
                       width:900px;
                       min-height:300px;
                     }
   }
-}

@@ -2,9 +2,9 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
-        <title>blancopiedra/productos/vajilla/tazas</title>
-        <meta name="description" content="Tazas con diseños únicos en cerámica.">
-        <meta name="keywords" content="cerámica, tazas, tazón, tacitas, taza, diseño, original">
+        <title>blancopiedra/productos/deco/ceniceros</title>
+        <meta name="description" content="Ceniceros con diseños únicos en cerámica.">
+        <meta name="keywords" content="cerámica, ceniceros, cenicero, diseño, original">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;0,900;1,400;1,600;1,900&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial scale=1.0"/>
@@ -16,74 +16,90 @@
 <!--inicio header y menu-->
 <div class="container-fluid">
     <div class="row">
-        <div class="col-xs col-sm col-md col-lg">
-        <header class="header">
+        <header>
+            <nav class="navbar navbar-light colorGris justify-content-between navbar-expand-lg">
 
-                <a href="index.html"><img src="media/blanco-piedra.svg" alt="logo" class="header__img__logo"/></a>
+                <a href="index.html" class="logo"><img src="media/blanco-piedra.svg" alt="logo" class="navbar-brand justify-content-start"/></a>
+                    
+                    <button class="navbar-toggler justify-content-end" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
+    
+                            <div class="navbar-nav text-center">
 
-            <nav class="navegacion">
-          
-                <ul class="menu">
-                    <li><a href="productos.html">Productos</a>
-                        <ul class="subMenu">
-                            <li><a href="vajilla.html">vajilla</a></li>
-                            <li><a href="deco_objetos.html">deco</a></li>
-                        </ul>      
-                   
-                    <li><a href="precios.html">Precios y Medidas</a></li>
+                                <a class= "nav-item nav-link" href="sobreblancopiedra.html">Sobre BP</a>
+                            
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Productos
+                                    </a>
+                                    <div class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
+                                      <a class="dropdown-item" href="vajilla.html">Vajilla</a>
+                                      <a class="dropdown-item" href="deco_objetos.html">Deco</a>
+                                      <a class="dropdown-item" href="productos.html">Diseños</a>  
+                                      <a class="dropdown-item" href="precios.html">Precios</a>
+                                    </div>
+                                </li>   
+                                
+                                <a class= "nav-item nav-link" href="encargospersonalizados.html">Encargos</a>
+    
+                                <a class= "nav-item nav-link" href="contacto.html">Contacto</a>
 
-                    <li><a href="encargospersonalizados.html">Encargos personalizados</a></li>
+                            </div>
 
-                    <li><a href="sobreblancopiedra.html">Sobre BLANCO PIEDRA</a></li>
-
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>      
-              
-            </nav>
-        </header>
-        </div>
+                    </div>           
+            </nav>          
+        </header> 
     </div>
 </div>
 <!--fin header y menu-->
 
 <!--inicio pagina ceniceros-->
-<section class="section1">
+<section class="container-fluid">
+
+    <div class="row justify-content-center section1">
+
     <h1>CENICEROS</h1>
-</section>
 
-<section>
+    </div>
 
-<div class="row justify-content-center">
+    <div class="container">
+        <div class="row justify-content-center">
 
-    <div class="col-xs col-sm col-md-4 col-lg-3">
+            <div class="col-xs col-sm col-md-4 col-lg-3">
 
-        <div class="card">
-            <img src="media/cenicero_pastel.jpeg" class="card-img-top" alt="taza azul">
-            <div class="card-body card-body--producto">
-                <h5 class="card-title">Línea pastel</h5>
-                <p class="card-text"><em>$ 800</em></p>
-            <div class="btn-group">
-                <div class="btn-group">
-                    <button class="btn boton--consulta btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Tamaño
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">chico</a>
-                        <a class="dropdown-item" href="#">grande</a>
+                <div class="card" id="cardTienda">
+                    <img src="media/cenicero_pastel.jpeg" class="card-img-top" alt="taza azul">
+                    <div class="card-body card-body--producto">
+                        <h5 class="card-title">Línea pastel</h5>
+                        <p class="card-text"><em>$ 800</em></p>
+                    <div class="btn-group">
+                        <div class="btn-group">
+                            <button class="btn boton--consulta btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Tamaño
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item small" href="#">chico</a>
+                                <a class="dropdown-item small" href="#">grande</a>
+                            </div>
+                        </div>
+                    </div>
+                        <a href="contacto.html"><button type="button" class="btn boton--comprar btn-sm">Comprar!</button></a>
+
                     </div>
                 </div>
-            </div>
-        <a href="contacto.html"><button type="button" class="btn boton--comprar btn-sm">Comprar!</button></a>
+            </div>    
+        </div>
     </div>
-</div>
     
-</div>
+</section>
 
 <div class="container-fluid">
     <div class="row">
-   
     <footer class="footer">
-       
+
         <div class="footer__column">
             <ul class="footer__column__list">
                 <li class="footer__column__item"><a href="envíos.html"><img src="media/truck.png" alt="envios"><p class="footer__column__list footer__column__list--oculto">Envíos</p></a></li>
@@ -104,22 +120,18 @@
 
         <div class="footer__column">
             <ul class="footer__column__list">
-                <li class="footer__column__item"><a href="mapa.html"><img src="media/lup.png" alt="faqs"><p class="footer__column__list footer__column__list--oculto">Navegación</p></a></li>
+                <li class="footer__column__item"><a href="mapa.html"><img src="media/lup.png" alt="map"><p class="footer__column__list footer__column__list--oculto">Navegación</p></a></li>
             </ul>
         </div>
-      
+
     </footer>
-    
     </div>
 </div>
 
 
-
-
-
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>      
 
 </body>
 </html>

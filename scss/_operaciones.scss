@@ -3,6 +3,14 @@
 
 /*VARIABLES*/
 
+$espacio10: 10px;
+
+$espacio20: 20px;
+
+$espacio30: 30px;
+
+$espacio40: 40px;
+
 $verdeOscuro: #79A4A4;
     
 $grisOscuro: #40454f;
@@ -13,7 +21,7 @@ $grisClaro: #d1d4dc;
     
 $blanco: #f3f4f6;
     
-$verdeAqua: #C2D6D6;
+$verdeAqua: #c2d6d6c5;
  
 $coral:coral;
 
@@ -89,12 +97,12 @@ $ingreso: true;
 /*MIXINS PARA LAS CARDS*/
 
 @mixin margenes1 {
-                margin: 10px 5px 10px 5px;
+                margin: $espacio10 5px $espacio10 5px;
             }
 
 @mixin margenesCostados {
-                        margin-left:40px;
-                        margin-right: 40px;
+                        margin-left:$espacio40;
+                        margin-right: $espacio40;
                     }
 
 @mixin fondoOscuro {
@@ -107,55 +115,45 @@ $ingreso: true;
 @mixin fondoClaro {
                     background-color: $blanco;
                     color:$grisOscuro;
-                    font: size 24px;
+                    font-size: 20px;
                     text-shadow: $grisMedio;
-                    height:45px;
                     text-align:center;
-                    padding: 5px;
+                    padding-top: $espacio10;
                 }
 
-@mixin fondoMedio {
-                    background-color:$verdeAqua;
-                    color: $grisOscuro;
-                    letter-spacing: 10px;
-                    font-style: italic;
-                    text-transform:uppercase;
-                    font-size: 22px;
-                    padding:5px;
-                }
-
-.card-body{
+.card-body {
             @include fondoOscuro;
-        }
+            padding-top: $espacio10;
+          }
 
 .card-body--producto {
-                        background-color: $blanco;
-}
+                        @include fondoClaro;
+                }
 
 .card {
         @include margenes1;
     }
 
 .card-header {
-                @include fondoClaro;
+              @include fondoClaro;
+              font-size: 18px;
             }
 
-.card-header--productos {
-                        @include fondoMedio;
-                        display:flex;
-                        flex-direction: row nowrap;
-                        justify-content: center;
-                    }
+@media only screen and (min-width:768px) {
 
-.card-title {
+    .card-header {
+        font-size: 25px;
+      }
+}
+
+.card-title { 
             @include fondoOscuro;
-            font-size: 20px;
-            font-weight: bold;
-            padding: 4px;
         }
 
 .card-text {
+            font-size: 14px;
             margin: 0px;
+            padding: $espacio10;
 }
 
 .btn {
@@ -171,7 +169,7 @@ $ingreso: true;
 
 /*EACH PRODUCTOS*/
 
-@each $disenos in geometria, calado, puntillismo, franjas, gotas {
+@each $disenos in geometria, calado, puntillismo, franjas, gotas, flora {
     .#{$disenos}-card-body {
         background-image:url('../media/#{$disenos}.jpg');
         background-size:cover;

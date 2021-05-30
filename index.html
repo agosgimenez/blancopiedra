@@ -17,83 +17,57 @@
 <!--inicio de header y menu-->
 <div class="container-fluid">
     <div class="row">
-        <div class="col-xs col-sm col-md col-lg">
-            <header class="header">
+        <header class="col-xs col-sm col-md col-lg col-xl">
+            <nav class="navbar navbar-light colorGris justify-content-between navbar-expand-lg">
 
-                <a href="index.html"><img src="media/blanco-piedra.svg" alt="logo" class="header__img__logo"/></a>
+                <a href="index.html" class="logo"><img src="media/blanco-piedra.svg" alt="logo" class="navbar-brand justify-content-start"/></a>
+    
+                    <button class="navbar-toggler justify-content-end" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
+    
+                            <div class="navbar-nav text-center">
 
-                <nav class="navegacion">
-          
-                    <ul class="menu">
-                        <li><a href="productos.html">Productos</a> 
-                            <ul class="subMenu">
-                                <li><a href="vajilla.html">vajilla</a></li>
-                                <li><a href="deco_objetos.html">deco</a></li>
-                            </ul>      
-                       
-                        <li><a href="precios.html">Precios y Medidas</a></li>  
+                                <a class= "nav-item nav-link menu" href="sobreblancopiedra.html">Sobre BP</a>
+                            
+                                <li class="nav-item dropdown">
+                                    <a href="productos.html" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Productos
+                                    </a>
+                                    <div class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
+                                      <a class="dropdown-item" href="vajilla.html">Vajilla</a>
+                                      <a class="dropdown-item" href="deco_objetos.html">Deco</a>
+                                      <a class="dropdown-item" href="productos.html">Diseños</a>  
+                                      <a class="dropdown-item" href="precios.html">Precios</a>
+                                    </div>
+                                </li>   
+                                
+                                <a class= "nav-item nav-link" href="encargospersonalizados.html">Encargos</a>
     
-                        <li><a href="encargospersonalizados.html">Encargos personalizados</a></li> 
-    
-                        <li><a href="sobreblancopiedra.html">Sobre BLANCO PIEDRA</a></li> 
-    
-                        <li><a href="contacto.html">Contacto</a></li> 
-                    </ul>      
-                  
-                </nav>
+                                <a class= "nav-item nav-link" href="contacto.html">Contacto</a>
 
-            </header>
-        </div>
+                            </div>
+
+                    </div>           
+            </nav>          
+        </header> 
     </div>
 </div>
 <!--fin de header y menu-->
 
 <!--inicio de video main-->
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-xs col-sm col-md-12 col-lg-10">
-            <main class="main">
-                <video class="main__video__edit" src="media/video2.mp4" controls autoplay loop muted >ERROR</video> <!--VIDEO-->
-            </main>     
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm col-md col-lg col-xl" style="padding:0px">
+            <main>
+                <video class="main__video" src="media/videoindex.mov" autoplay loop muted >ERROR</video>
+            </main>
         </div>
     </div>   
 </div>
 <!--fin de video main-->
-
-<!--inicio de cuadro con características-->
-<div class="container">
-<div class="row justify-content-center">
-    <div class="col-xs col-sm col-md-10 col-lg-10">
-        <table class="table tablaIndex">
-                <tr class="tablaIndex__titulo">
-                    <th>características de los productos</th>
-                </tr>
-
-                <tr>
-                    <td class="tablaIndex__punto1">• diseños de autor •</td>
-                </tr>
-
-                <tr>
-                    <td class="tablaIndex__punto1">piezas de edición limitada</td>
-                </tr>
-        
-                <tr>
-                    <td class="tablaIndex__punto2">Disponible en dos líneas de colores: línea pastel y línea azul</td>
-                </tr>        
-                
-                <tr> 
-                    <td>
-                        <ul>
-                        <li class="tablaIndex__aptoVajilla"><p class="tablaIndex__apto">apto para vajilla</p></li>
-                        <li class="tablaIndex__aptoMicro"><p class="tablaIndex__apto">apto para microondas</p></li>
-                        </ul>
-                    </td>
-                </tr>
-        </table>
-    </div> 
-</div>        
-</div>  
-<!--fin de cuadro con características-->
 
 <!--inicio de galería en home-->
 <div class="container-fluid">
@@ -110,7 +84,7 @@
         <div class="gridGallery">
 
             <article class="gridGallery__gridTazas">
-                <div class="fotoCard fotoTazas">
+                <div class="fotoCard rounded fotoTazas fotoindex">
                     <a href="vajilla_tazas.html">
                         <h4 class="gridGallery__descrip">tazas</h4>
                     </a>
@@ -118,7 +92,7 @@
             </article>
 
             <article class="gridGallery__gridVasos">
-                <div class="fotoCard fotoVasos">
+                <div class="fotoCard rounded fotoVasos">
                     <a href="vajilla_vasos.html">
                         <h4 class="gridGallery__descrip">vasos</h4>
                     </a>
@@ -126,7 +100,7 @@
             </article>
              
             <article class="gridGallery__gridSets"> 
-                <div class="fotoCard fotoSets">
+                <div class="fotoCard rounded fotoSets">
                     <a href="vajilla_sets.html">
                         <h4 class="gridGallery__descrip">sets de vajilla</h4>
                     </a>
@@ -134,7 +108,7 @@
             </article>
 
             <article class="gridGallery__gridMates">
-                <div class="fotoCard fotoMates">
+                <div class="fotoCard rounded fotoMates">
                     <a href="vajilla_mates.html">
                         <h4 class="gridGallery__descrip">mates</h4>
                     </a>
@@ -142,7 +116,7 @@
             </article> 
 
             <article class="gridGallery__gridBowls">
-                <div class="fotoCard fotoBowls">
+                <div class="fotoCard rounded fotoBowls">
                     <a href="vajilla_bowls.html">
                         <h4 class="gridGallery__descrip">bowls</h4>
                     </a>
@@ -150,7 +124,7 @@
             </article> 
 
             <article class="gridGallery__gridBandejas">
-                <div class="fotoCard fotoBandejas">
+                <div class="fotoCard rounded fotoBandejas">
                     <a href="vajilla_bandejas.html">
                         <h4 class="gridGallery__descrip">bandejas</h4>
                     </a>
@@ -158,7 +132,7 @@
             </article>
 
             <article class="gridGallery__gridPortaUtensillos">
-                <div class="fotoCard fotoPortaUtensillos">
+                <div class="fotoCard rounded fotoPortaUtensillos">
                     <a href="vajilla_portautensillos.html">
                         <h4 class="gridGallery__descrip">porta Utensillos</h4>
                     </a>
@@ -166,7 +140,7 @@
             </article>
 
             <article class="gridGallery__gridPlatos">
-                <div class="fotoCard fotoPlatos">
+                <div class="fotoCard rounded fotoPlatos">
                     <a href="vajilla_platos.html">
                         <h4 class="gridGallery__descrip">platos</h4>
                     </a>
@@ -174,8 +148,7 @@
             </article> 
 
             <article class="gridGallery__gridObjetos">
-                <div class="fotoCard
-                    fotoObjetos">
+                <div class="fotoCard rounded fotoObjetos">
                     <a href="deco_objetos.html">
                         <h4 class="gridGallery__descrip">objetos</h4>
                     </a>
@@ -183,8 +156,7 @@
             </article> 
 
             <article class="gridGallery__gridMacetas">
-                <div class="fotoCard 
-                    fotoMacetas">
+                <div class="fotoCard rounded fotoMacetas">
                     <a href="deco_macetas.html">
                         <h4 class="gridGallery__descrip">macetas</h4>
                     </a>
@@ -192,7 +164,7 @@
             </article> 
 
             <article class="gridGallery__gridFloreros">
-                <div class="fotoCard fotoFloreros">
+                <div class="fotoCard rounded fotoFloreros">
                     <a href="deco_floreros.html">
                         <h4 class="gridGallery__descrip">floreros</h4>
                     </a>
@@ -205,17 +177,13 @@
 <!--fin de galería en home-->
 
 <!--inicio redes en aside-->
-<div class="container">
-    <div class="row">
-        <aside class="aside">
-            <ul class="aside__list">
-                <li><a href="https://api.whatsapp.com/send?phone=541165883288&text=Hola!%20Me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20blancopieda"><img src="media/whatsapp.png" alt="whatsapp" class="aside__list__li__img"></a></li>
-                <li><a href="https://www.facebook.com/Blanco-Piedra-109774317873904"><img src="media/fb.png" alt="facebook" class="aside__list__li__img"></a></li>  
-                <li><a href="https://www.instagram.com/blancopiedra.ceramica"><img src="media/ig.png" alt="instagram" class="aside__list__li__img"></a></li> 
-            </ul>
-        </aside>
-    </div>  
-</div>
+<aside class="aside">
+    <ul class="aside__list">
+        <li><a href="https://api.whatsapp.com/send?phone=541165883288&text=Hola!%20Me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20blancopieda"><img src="media/whatsapp.png" alt="whatsapp" class="aside__list__li__img"></a></li>
+        <li><a href="https://www.facebook.com/Blanco-Piedra-109774317873904"><img src="media/fb.png" alt="facebook" class="aside__list__li__img"></a></li>  
+        <li><a href="https://www.instagram.com/blancopiedra.ceramica"><img src="media/ig.png" alt="instagram" class="aside__list__li__img"></a></li> 
+    </ul>
+</aside>
 <!--fin redes en aside-->
 
 <!--inicio footer-->
@@ -254,9 +222,9 @@
 </div>
 <!--fin footer-->
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>      
 
 </body>
 

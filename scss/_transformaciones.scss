@@ -1,9 +1,4 @@
-/*GRADIENTES y TRANSFORMACIONES*/
-
-.header {
-        background-image: linear-gradient(#f3f4f6,#d1d4dc)
-    }
-
+/*TRANSFORMACIONES*/
 
 .logo:hover {
             transform: scale(1.1,1.1);
@@ -31,3 +26,15 @@
                 color:coral;
                 font-weight: bold;
             }
+
+
+.fotoindex {
+            filter:grayscale(0%);
+            transition: filter 1s;
+        }  
+
+.fotoindex:hover {
+                    filter:grayscale(100%)
+            }
+
+            

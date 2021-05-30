@@ -11,11 +11,13 @@ $letraXxl: 24px;
 
 $letraSpace: 5px; 
 
-$oracionSpace: 20px;
+$espacio10: 10px;
 
-$palabraSpace: 8px;
+$espacio20: 20px;
 
-$spaceInputs: 15px;
+$espacio30: 30px;
+
+$espacio40: 40px;
 
 $verdeOscuro: #79A4A4;
     
@@ -43,6 +45,7 @@ body {
     font-style: normal; 
     font-family: 'Poppins', Tahoma, Arial, sans-serif;
     text-align: center;
+    color: $grisOscuro;
 }
 
 @media only screen and (min-width:768px) {
@@ -67,12 +70,13 @@ h1 {
     font-size: $letraXxl;
     color: $grisOscuro;
     text-shadow: $verdeAqua 3px 3px;
+    padding-bottom: $espacio20;
 }
 
 @media only screen and (min-width:768px) {
     
     h1 {
-        letter-spacing: 10px;
+        letter-spacing: $espacio10;
         font-size: 40px;
     }
 }
@@ -80,16 +84,18 @@ h1 {
 @media only screen and (min-width:1000px) {
     
     h1 {
-        letter-spacing: 10px;
+        letter-spacing: $espacio10;
         font-size: 70px;
+        padding-top: 25px;
     }
 }
 
 
 h2 {
-    font-size:20px;
-    color:$verdeOscuro;
+    font-size: 20px;
+    color: $verdeOscuro;
     text-shadow: 1px 1px $grisOscuro;
+    padding-bottom: $espacio20;
 }
 
 @media only screen and (min-width:768px) {
@@ -102,13 +108,14 @@ h2 {
 @media only screen and (min-width:1000px) {
 
     h2 {
-        font-size: 30px; 
+        font-size: 30px;
+        padding-top: 15px; 
     }
 }
 
 
 h3 {
-    font-size:$letraXl; 
+    font-size: $letraXl; 
     font-style:italic; 
     font-weight: lighter; 
     padding-top: 15px;
@@ -138,7 +145,7 @@ h4 {
         }
     }
 
-/*a,em*/
+/*em*/
 
 em {
     font-weight: lighter;
@@ -147,19 +154,26 @@ em {
     text-transform: uppercase;
 }
 
+/*enlaces*/
+
 a {
     color:$blanco;  
 }
-
+            
 a:hover {
-        font-style:italic; 
-        color:$verdeOscuro;
-        text-decoration:none;
+         font-style:italic; 
+         text-decoration:none;
+         color: $coral;
     }
+            
+.dropdown-item {
+                color: $grisOscuro;
+            }
 
-a:active {
-        color: $coral;  
-    }
+.dropdown-item:hover {
+                      color: $blanco;
+                      background-color: $coral;
+                }
 
 /*footer*/
 
@@ -179,8 +193,8 @@ a:active {
 /*tablas y formularios*/
 
 .table {
-        padding:30px; 
-        word-spacing: 10px;
+        padding: $espacio30; 
+        word-spacing: $espacio10;
         background-color:$verdeOscuro;
     }
 
@@ -203,91 +217,157 @@ td {
 
 /*TIPOGRAFIAS ESPECIALES*/
 
+/*jumbotron*/ 
+
 .jumbotron {
-            margin:40px;
-        }
+            padding-top: $espacio30;
+}
 
 .jumbotron__titulo {
-                    font-size: 45px;
+                    font-size: 30px;
                 }
 
-.maps {
-        color:$verdeAqua; 
-    }
 
-.botonAlert {
-            font-size: 12px;
-        }
-
-.botonesFormulario{
-                    margin-top: 10px;
-                }
-
-@media only screen and (min-width:1000px) {
-
-    .botonAlert {
-                font-size: 14px;
-                margin-left:10px;
-                margin-right:120px;
-            }
-    }
-                
-
-@media only screen and (min-width:1000px) {
-
-    .botonAlert {
-                font-size: 14px;
-            }
-    }
-
+/*"handmade" en index*/
 
 #handMade {
             text-align: center;
             text-transform: uppercase;
-            letter-spacing: 15px;
-            font-size: 35px;
+            letter-spacing: 20px;
+            font-size: 30px;
             text-shadow: 4px 4px $verdeOscuro;
-            border-bottom: $grisClaro solid 10px;
-            margin: 10px;
-}
+            border-bottom: $grisClaro solid $espacio10;
+            margin: $espacio30;
+        }
 
 @media only screen and (min-width:768px) {
 
     #handMade {  
-                letter-spacing: 30px;
-                font-size: 70px;
-                margin-left: 30px;
-                margin-right: 30px;
+                letter-spacing: 50px;
+                font-size: 60px;
+                margin-left: $espacio30;
+                margin-right: $espacio30;
             }
     }
 
 @media only screen and (min-width:1000px) {
 
     #handMade {  
-                letter-spacing: 30px;
-                font-size: 140px;
-                margin-left: 30px;
-                margin-right: 30px;
+                letter-spacing: 60px;
+                font-size: 100px;
+                margin-left: $espacio30;
+                margin-right: $espacio30;
             }   
     }
     
-.map__article {
-                font-size: 20px;
-                line-height: 40px;
-            }    
+/*FORMULARIOS*/
 
-.map__items ul li{
-                    list-style-type:circle;
-                }
+.encargo__formulario { 
+        background-color:#79a4a4a9;
+        padding: $espacio10;
+        margin-bottom: 40px;
+        margin-top: $espacio20;
+      }
 
-.map a {
-        color: $verdeOscuro;
-    }
+.formulario__legend {
+        text-transform: uppercase;
+        letter-spacing: 8px;
+        color: $blanco;
+        font-size: 20px;
+}
 
-.map li {
-        color: $coral;
-    }
+.formulario__detalles {
+          padding-top: $espacio30;
+          font-size: 20px;
+          text-transform: uppercase;
+          letter-spacing: 8px;
+          color: $blanco;
+}
+
+.formulario__item {
+      padding: $espacio10;
+  }
+
+.form-control {
+  margin-bottom: $espacio20;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+.encargo__formulario { 
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+}
+
+@media only screen and (min-width: 1000px) {
+
+
+.encargo__formulario {
+        margin-left: 200px;
+        margin-right: 200px;
+      }
+
+}
 
 .form-control {
                 text-align: center;
+}
+
+/*botones*/
+
+.descuento {
+            background-color: $magenta !important;
+        }
+
+.cuotas {
+         background-color: $verdePetroleo !important;
+    }
+
+.botonesFormulario{
+                   margin-top: $espacio10;
+                   border: 0px;
+            }
+
+.botonesFormulario:hover {
+                            background-color: $magenta;
+            }
+
+.Alert1 {
+         background-color:$magenta !important;
+}
+
+.Alert2 {
+         background-color:$verdePetroleo !important;
+         color:$blanco;
+}
+
+.Alert3 {
+        background-color:$coral !important;
+}
+
+.botonAlert {
+            font-size: 12px;
+            border: 0px;
+            color:$blanco;
+            margin:$espacio30;
+            text-align: center;
+    }   
+
+@media only screen and (min-width:768px) {
+
+.botonAlert {
+            font-size: 14px;
+            margin-right:150px;
+    }
+}
+        
+
+@media only screen and (min-width:1000px) {
+
+.botonAlert {
+            font-size: 14px;
+            margin-right:170px;
+    }
 }

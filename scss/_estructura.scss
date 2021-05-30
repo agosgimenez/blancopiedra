@@ -19,11 +19,13 @@ $letraXxl: 24px;
 
 $letraSpace: 5px; 
 
-$oracionSpace: 20px;
+$espacio10: 10px;
 
-$palabraSpace: 8px;
+$espacio20: 20px;
 
-$spaceInputs: 15px;
+$espacio30: 30px;
+
+$espacio40: 40px;
 
 $verdeOscuro: #79A4A4;
     
@@ -43,8 +45,6 @@ $magenta: magenta;
 
 $verdePetroleo: teal;
 
-
-
 /*body*/
 
 body {
@@ -52,148 +52,110 @@ body {
     background-image:url("../media/rockywall.png");
 }
 
-/*BEM HEADER*/
+/*HEADER NAV Y MAIN*/
 
 .header {
-        width: 100%;
-        height: 70px;
-        min-height: 75px;
-        margin-top: 0px;
-        text-align: center;
-        background-image: linear-gradient($blanco, $grisClaro);
+        display:flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
         position: fixed;
         z-index: 2;
     }
 
-.header__img__logo {
-                    width:100%;
-                    height: 50px;
-                    padding: 5px;
-                    margin-bottom: 5px;
-                    transition: all 1s;
-                }
+.navbar {
+        width:100%;
+        left: 0px;
+        right: 0px;
+        padding: 0px;
+        z-index:2;
+        position:fixed;
+    }
 
-.header__img__logo:hover {
-                        transform: scale(1.1,1.1);
-                    }
+.logo {
+       width: 60%; 
+       margin: 0px;
+       padding-left: $espacio10;
+       transition: all 1s;
+    }
 
+.logo:hover {
+             transform: scale(1.1,1.1);
+            }
 
-@media only screen and (min-width:768px) {
-
-    .header {
-            height: 100px;
-        }
-
-    .header__img__logo {
-                        width:100%;
-                        height: 70px;
-                        padding: 5px;
-                        margin-bottom: 10px;
-                        transition: all 1s;
-                    }
+.colorGris {
+            background-color: #d1d4dcd5;
 }
 
-@media only screen and (min-width:1000px) {
-
-    .header {
-            height: 100px;
-        }
-
-    .header__img__logo {
-                        height: 70px;
-                    }
+.navbar-toggler {
+                border: 0px;
 }
 
+.navbar-toggler-icon {
+                      width: $espacio20;
+}
 
-/*--menu de navegacion--*/
+.navbar-nav {
+            padding: $espacio10;
+            font-size: $letraXl;
+}
 
-.navegacion {
-            height: 20px;
-            font-size: 12px;
-            color:#f3f4f6;
-            background-color: #40454f;
-            z-index:2;
-            text-align:center;
-            position:relative;
-            bottom: 10px;
-        }
+.dropdown-menu {
+                border: 0px;
+                background-color: $blanco;
+                position: absolute;
+                text-align: center;
+}
+
+.nav-item {
+    padding-left: $espacio20;
+    padding-right: $espacio20;
+}
 
 @media only screen and (min-width:768px) {
     
-    .navegacion {
-                height: 30px;
-                font-size: 12px;
-            }
+    .logo {
+           width: 35%;
+     }
+
+     .navbar-collapse {
+        width: 50%;
+        padding-right: $espacio40;
+    }
+
+    .navbar-toggler-icon {
+        width: $espacio40;
+    }
 
 }
 
 @media only screen and (min-width:1000px) {
-
-    .navegacion {
-                height: 30px;
-                font-size: 16px;
-            }
-
-}
-
-.navegacion ul {
-                list-style-type: none;
-                justify-content: center;
-                align-content: center;
-            }
-
-.menu  {
-    background-color:#40454f;
-    color:#f3f4f6;
-}
-
-.menu li  {
-        position:relative;
-        display: inline-block;
+    
+    .logo {
+           width: 30%;
+           padding-left: $espacio30;
     }
 
-.menu li a {
-            padding-left:20px;
-            padding-right: 20px;
-        }
-
-.subMenu {
-        width: 100%;
-        position:absolute;
-        top: 30px;
-        visibility:hidden;
+    .navbar-collapse {
+                      width: 40%;
+                      padding-right: $espacio40;
     }
+}
 
-.subMenu li {
-            width: 100%;
-            display:block;
+main {
+      width: 100%;
+}
+
+.main__video {
+              width:100%;
+              padding-left: 0px;
+              padding-right: 0px;
         }
 
-.menu li:hover .subMenu {
-                        display:block;
-                        visibility:visible;
-                    }
 
-.subMenu li a {
-                background-color:#f3f4f6;
-                color:#40454f;
-                display:block;
-                margin-top: 1px;
-                padding: 8px;
-            }
-
-.subMenu li a:hover {
-                    color:coral;
-                }
-
-
-/*--fin menú de nav--*/
-
-
-/*BEM ASIDE*/
+/*ASIDE*/
 
 .aside {
-        top: 260px;
+        top: 150px;
         right: 1px;
         display: inline-block;
         align-items: right;
@@ -205,8 +167,8 @@ body {
             }
 
 .aside__list__li__img {
-                        width: 47px;
-                        min-width: 20px;
+                        width: 45px;
+                        min-width: $espacio20;
                         padding: 5px;
                         transition: 1s;
                     }
@@ -219,150 +181,72 @@ body {
 
     .aside__list__li__img {
                             width: 55px;
-                            min-width: 20px;
-                            padding: 5px;
-                            transition: 1s;
                         }
 }
 
 @media only screen and (min-width:1000px) {
 
     .aside__list__li__img {
-                            width: 70px;
-                            min-width: 20px;
-                            padding: 5px;
-                            transition: 1s;
-    }
-
-}
-
-/*BEM MAIN*/
-
-.main {
-        width:100%;
-        display:flex;
-        flex-direction: row;
-        justify-content:center;
-        padding-top: 105px;
-        padding-bottom: 10px;
-        margin-left:5px;
-        margin-right:5px;
-    }
-
-.main__video__edit {
-                    width:100%;
-                }
-
-@media only screen and (min-width:768px) {
-
-    .main {
-            width:100%;
-            display:flex;
-            flex-direction: row;
-            justify-content:center;
-            padding-top: 110px;
-            padding-bottom: 10px;
-            margin-left:5px;
-            margin-right:5px;
-        }
-
-    .main__video__edit {
-                        width:700px;
-                    }
-}
-
-@media only screen and (min-width:1000px) {
-
-    .main {
-            width:100%;
-            display:flex;
-            flex-direction: row;
-            justify-content:center;
-            padding-top: 120px;
-            padding-bottom: 10px;
-            margin-left:5px;
-            margin-right:5px;
-        }
-
-    .main__video__edit {
-                        width: 100%;
-                        max-width: 1200px;
-                    }
+                            width: 60px;
+                        }
 }
 
 /*SECTIONS*/
 
 .section1 {
-            width:100%;
-            padding-top:105px;
+            padding-top:75px;
             text-align: center;
+            margin-left: $espacio10;
+            margin-right: $espacio10;
         }
 
 @media only screen and (min-width:1000px) {
 
     .section1 {
-                width:100%;
-                padding-top:110px;
+                padding-top: 80px;
                 text-align: center;
             }
-
 }
 
 .section2 {
             text-align: center;
             display:flex;
-            flex-flow: column nowrap;
+            flex-flow: row nowrap;
             justify-content:center;
-            margin:10px 50px 10px 50px;
+            margin: 50px;
         }
 
+.section3 {
+            margin-left: $espacio30;
+            margin-right: $espacio30;
+    }
 
-/*BEM GALERIA HORIZONTAL*/
+.sectionGaleria {
+                padding-left: $espacio10;
+                padding-right: $espacio10;
+                margin-bottom: 80px;
+       }        
 
-.galeriaHorizontal {
-                    display: flex;
-                    flex-flow:column wrap;
-                    justify-content:center;
-                }
-
-.galeriaHorizontal__diseno {
-                            width:100%;
-                            margin-top: 10px;
-                            margin-bottom: 10px;
-                            background-color: $grisClaro;
-                        }
-
-.galeriaHorizontal__descrip {
-                            position: relative;
-                            top: 40%;
-                            width:100%;
-                            text-align: center;
-                            font-size: 18px;
-                            text-shadow: 2px 2px $grisOscuro;
-                        }
-
-@media only screen and (min-width:1000px) {
-    
-    .galeriaHorizontal__descrip {
-                                font-size: 40px;
-                            } 
+.list-group {
+             margin-bottom: $espacio40;
 }
 
-/*BEM FOOTER*/
+
+/*FOOTER*/
 
 .footer {
         width:100%;
-        height:40px;
+        height:$espacio40;
         display:flex;
         flex-direction: row nowrap;
         justify-content:space-evenly;
         bottom: 0px;
-        margin-top:40px;
+        margin-top:$espacio40;
     }
 
 .footer__column {
-                padding-top:10px;
-                padding-bottom:10px;
+                padding-top:$espacio10;
+                padding-bottom:$espacio10;
             }
 
 .footer__column__list { 
@@ -376,8 +260,8 @@ body {
                             }
 
 .footer__column__item {
-                        margin-left:10px;
-                        margin-right:10px;
+                        margin-left:$espacio10;
+                        margin-right:$espacio10;
                     }
 
 .footer__column__item:hover {
@@ -417,7 +301,7 @@ body {
                         }
 
     .footer__icono {
-                    width:40px;
+                    width:$espacio40;
                 }
 
     .footer__column__list--oculto {
@@ -433,103 +317,10 @@ body {
                 }
 }
 
-
-/*BEM TABLA DE INDEX*/
-
-.tablaIndex {
-            margin: 20px 10px 20px 10px;
-            padding:10px;
-            text-align: center;
-        }
-
-.tablaIndex__titulo {
-                    font-size: $letraXl;
-                    text-transform:uppercase;
-                    letter-spacing: $letraSpace;
-                    word-spacing: $palabraSpace;
-                }
-
-.tablaIndex__punto1 {
-                    font-size:14px;
-                    font-style:italic;
-                    text-transform:uppercase;
-                }
-
-.tablaIndex__punto2 {
-                    font-size:12px; 
-                    font-weight: bold;
-                }
-
-.tablaIndex__apto {
-                    font-size:14px;
-                    text-align: center;
-                    font-style: italic;
-                }
-
-.tablaIndex__aptoVajilla {
-                        list-style-image: url("../media/coffee.png"); 
-                        text-align: center;
-                        font-style: italic;
-                        list-style-position:inside;
-                        transform:translate(0px, 10px);
-                    }
-
-.tablaIndex__aptoMicro {
-                        list-style-image: url("../media/sun.png"); 
-                        list-style-position: inside;
-                        transform:translate(0px, 10px);
-                    }
-
-@media only screen and (min-width:768px) {
-
-    .tablaIndex__titulo {
-                        font-size: 20px;
-                        text-transform:uppercase;
-                        letter-spacing: 5px;
-                        word-spacing: 12px;
-                    }
-    
-    .tablaIndex__punto1 {
-                        font-size:16px;
-                    }
-    
-    .tablaIndex__punto2 {
-                        font-size:14px; 
-                    }
-    
-    .tablaIndex__apto {
-                        font-size:14px;
-                    }
-}
-
-
-@media only screen and (min-width:1000px) {
-
-    .tablaIndex__titulo {
-                        font-size: 28px;
-                        text-transform:uppercase;
-                        letter-spacing: 5px;
-                        word-spacing: 12px;
-                    }
-    
-    .tablaIndex__punto1 {
-                        font-size:25px;
-                    }
-    
-    .tablaIndex__punto2 {
-                        font-size:22px; 
-                    }
-    
-    .tablaIndex__apto {
-                        font-size:20px;
-                    }
-}
-
-/*BEM ENVIOS*/
+/*ENVIOS*/
 
 .envios {
-        margin-top:10px;
-        margin-bottom:10px;
+        margin:$espacio10 $espacio20 $espacio10 $espacio20;
         display:flex;
         align-items:flex-start;
     }
@@ -538,7 +329,7 @@ body {
                 text-align:center;
                 list-style-type:disc;
                 list-style-position:inside;
-                line-height: 10px;
+                line-height: $espacio10;
             }
 
 .envios__precio {
@@ -546,58 +337,53 @@ body {
                 letter-spacing: $letraSpace;
             }
 
-.envios__6000 {
-                color: $magenta;
-                text-shadow: burlywood;
-                font-weight: lighter;
-            }
-
 .envios__foto {
                 text-align:center;
-                width:100%;
-                margin-bottom:20px;
+                width: 250px;
+                margin-bottom: $espacio20;
             }
 
-/*BEM MEDIOS DE PAGO*/
+/*MEDIOS DE PAGO*/
 
 .pagos__texto {
-                line-height: $oracionSpace;
+                line-height: $espacio20;
                 text-align:center;
-                padding-top: 10px;
-                margin-bottom:10px;
+                padding-top: $espacio10;
+                margin-bottom:$espacio10;
             }
 
 .pagos__aclaracion {
-                    padding-top: 30px;
-                    margin-bottom:10px;
+                    padding-top: $espacio30;
+                    margin-bottom:$espacio10;
                 }
 
 .pagos__foto {
               text-align:center;
               width:100%;
-              margin-bottom:20px;
+              margin-bottom: $espacio20;
             }
 
-/*BEM FAQS*/
+/*FAQS*/
 
 .faqs {
-        margin-top:20px 40px 20px 40px;
-        padding-top:5px;
+        margin-top:$espacio20 $espacio40 $espacio20 $espacio40;
     }
 
 .faqs__preguntas {
-                  margin-top: 10px;
-                  margin-bottom: 10px;
+                  margin-top: $espacio10;
+                  margin-bottom: $espacio10;
             }
 
 .faqs__respuestas {
                    background-color: $verdeOscuro;
                    color:$blanco;
+                   padding: $espacio20;
                 }
 
 .faqs__foto1 {
               width:300px;
-              margin-top:10px;
+              margin-top: $espacio10;
+              margin-bottom: $espacio20;
             }
     
 .faqs__foto2 {
@@ -608,13 +394,12 @@ body {
 @media only screen and (min-width:768px) {
 
     .faqs {
-           margin-top:20px 40px 20px 40px;
-           padding-top:40px;
+           margin: top $espacio20 $espacio40 $espacio20 $espacio40;
         }
 
     .faqs__preguntas {
-                      margin-top: 30px;
-                      margin-bottom: 30px;
+                      margin-top: $espacio30;
+                      margin-bottom: $espacio30;
                     }
 
     .faqs__respuestas {
@@ -624,30 +409,27 @@ body {
 
     .faqs__foto1 {
                   width:300px;
-                  margin-top:30px;
-                  margin-bottom: 30px; 
+                  margin-top:150px;
+                  margin-bottom: $espacio30; 
                 }
 
     .faqs__foto2 {
                   display:flex;
                   width:300px;
-                  margin-top:30px;
-                  margin-bottom: 30px; 
+                  margin-top:150px;
+                  margin-bottom: $espacio30; 
                 }
-
 }
-
 
 @media only screen and (min-width:1000px) {
 
     .faqs {
-            margin-top:20px 40px 20px 40px;
-            padding-top:40px;
+            margin-top:0px $espacio40 $espacio20 $espacio40;
         }
 
     .faqs__preguntas {
-                      margin-top: 40px;
-                      margin-bottom: 30px;
+                      margin-top: $espacio30;
+                      margin-bottom: 15px;
                     }
 
     .faqs__respuestas {
@@ -657,29 +439,29 @@ body {
 
     .faqs__foto1 {
                   width:400px;
-                  margin-top:10px;
+                  margin-top:100px;
                 }
 
     .faqs__foto2 {
                   display:flex;
                   width: 400px;
+                  margin-top:80px;
                   margin-bottom: 80px;
-                  margin-top: 0px;
                 }
     }
 
-/*BEM SOBRE BLANCO PIEDRA*/
+/*SOBRE BLANCO PIEDRA*/
 
-.sobreBP {
-          margin-left: 20px;
-          margin-right: 20px;
-          padding: 10px;
+.sobreBP1 {
+            margin-left: $espacio20;
+            margin-right: $espacio20;
         }
 
-.sobreBP__texto {
-                background-color: $grisMedio; 
-                color: $blanco;
-            }
+.sobreBP {
+          background-color: $grisMedio; 
+          color: $blanco;
+          padding: $espacio30;
+        }
 
 .sobreBP__destacado {
                     font-size: $letraXxl;
@@ -699,49 +481,64 @@ body {
                     }
 }
 
-/*BEM PRECIOS*/
+/*PRECIOS*/
 
 .tabla__precios {
-                margin:5px;
+                margin-bottom: $espacio40;
+                margin-left: $espacio10;
+                margin-right: $espacio10;
                 text-align:center;
             }
 
-@media only screen and (min-width:768px) {
-
-    .tabla__precios {
-                    margin-left:10px;
-                    margin-right:10px;
-                    margin-bottom: 50px;
-                    text-align:center;
-                }
+.sets li {
+        padding-top: 5px;
+        padding-bottom: 5px;
 }
 
-/*BEM VAJILLA Y DECO*/
+.sets1 li {
+        margin-bottom: 35px;
+}
 
-.sectionGaleria {
-                 padding-left: 10px;
-                 padding-right: 10px;
-                 margin-bottom: 80px;
+@media only screen and (min-width:768px) {
+
+        .sets1 li {
+            margin-bottom: $espacio40;
+    }
+}
+
+@media only screen and (min-width:1000px) {
+
+        .sets1 li {
+                   margin-bottom: $espacio10;
             }
+}
+
+
+/*VAJILLA Y DECO*/
 
 .galeria__card1 {
                 width:300px;
                 height: 280px;
-                margin: 30px;
+                margin: $espacio30;
             }
 
 .galeria__card2 {
                 width: 300px;
                 height: 280px;
-                margin: 30px;
+                margin: 50px;
             }
 
 .galeria__card3 {
                 width: 350px;
                 height: 350px;
-                margin: 30px;   
+                margin: $espacio30;
+                transition: all 1s; 
             }
 
+.galeria__card3:hover {
+                       transform:scale(1.5);
+                       z-index:1;
+                }
 
 @media only screen and (min-width:768px) {
 
@@ -754,7 +551,6 @@ body {
                     width: 720px;
                     height: 250px;
                 }
-
 }
 
 @media only screen and (min-width:1000px) {
@@ -768,6 +564,5 @@ body {
                     width: 1030px;
                     height: 260px;
                 }
-
 }
 

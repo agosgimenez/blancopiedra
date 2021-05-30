@@ -15,44 +15,54 @@
 <body>
 
 <!--inicio header y menu-->    
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-xs col-sm col-md col-lg">
-            <header class="header">
+<div class="container-fluid">
+    <div class="row">
+        <header>
+            <nav class="navbar navbar-light colorGris justify-content-between navbar-expand-lg">
+
+                <a href="index.html" class="logo"><img src="media/blanco-piedra.svg" alt="logo" class="navbar-brand justify-content-start"/></a>
     
-                    <a href="index.html"><img src="media/blanco-piedra.svg" alt="logo" class="header__img__logo"/></a>
+                    <button class="navbar-toggler justify-content-end" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
     
-                <nav class="navegacion"> <!--MENU-->     
-              
-                    <ul class="menu">
-                        <li><a href="productos.html">Productos</a>  <!--LISTA Y SECCIONES-->
-                            <ul class="subMenu">
-                                <li><a href="vajilla.html">vajilla</a></li>
-                                <li><a href="deco_objetos.html">deco</a></li>
-                            </ul>      
-                       
-                        <li><a href="precios.html">Precios y Medidas</a></li>  <!--TABLA-->  
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
     
-                        <li><a href="encargospersonalizados.html">Encargos personalizados</a></li> <!--FORMULARIO-->
+                            <div class="navbar-nav text-center">
+
+                                <a class= "nav-item nav-link" href="sobreblancopiedra.html">Sobre BP</a>
+                            
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Productos
+                                    </a>
+                                    <div class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
+                                      <a class="dropdown-item" href="vajilla.html">Vajilla</a>
+                                      <a class="dropdown-item" href="deco_objetos.html">Deco</a>
+                                      <a class="dropdown-item" href="productos.html">Diseños</a>  
+                                      <a class="dropdown-item" href="precios.html">Precios</a>
+                                    </div>
+                                </li>   
+                                
+                                <a class= "nav-item nav-link" href="encargospersonalizados.html">Encargos</a>
     
-                        <li><a href="sobreblancopiedra.html">Sobre BLANCO PIEDRA</a></li> <!--PARRAFO Y FOTO-->
-    
-                        <li><a href="contacto.html">Contacto</a></li> <!--FORMULARIO-->
-                    </ul>      
-                  
-                </nav>
-            </header>
-            </div>
-        </div>
+                                <a class= "nav-item nav-link" href="contacto.html">Contacto</a>
+
+                            </div>
+
+                    </div>           
+            </nav>          
+        </header> 
     </div>
+</div>
 <!--fin header y menu-->
 
 <!--inicio pagina de contacto-->       
 <section class="section1">
-<h1>CONTACTO</h1>
+    <h1>CONTACTO</h1>
 </section>
 
-<section class="section2">
+<section>
 <h2>Dejá tu consulta completando el siguiente formulario:</h2>
 </section>
 
@@ -64,36 +74,36 @@
             <div class="form-group">
             <fieldset>
 
-                <legend class="contacto__legend">Ingresá tus datos:</legend>
+                <legend class="formulario__legend">Ingresá tus datos:</legend>
 
-            <div class="contacto__pregunta">  
+            <div class="formulario__item">  
             <label for="nombre">Nombre</label>
             <input type="text" id="nombre" name="nombre" class="form-control"/>
             </div>
 
-            <div class="contacto__pregunta">     
+            <div class="formulario__item">     
             <label for="email">Email</label>
             <input type="email" id="email" name="email" class="form-control"/>
             </div>
 
-            <div class="contacto__pregunta">     
+            <div class="formulario__item">     
             <label for="ComoConoceLaMarca">Cómo conociste Blanco Piedra?</label>
             </div>
 
-            <div class="contacto__pregunta">     
+            <div class="formulario__item">     
             <input type="radio" name="ComoConoceLaMarca" id="amigo/conocido" value="amigo/conocido"/>Mediante amigo/conocido
             </div>
 
-            <div class="contacto__pregunta">     
+            <div class="formulario__item">     
             <input type="radio" name="ComoConoceLaMarca" id="redes" value="redes"/>A través de redes sociales
             </div>
 
-            <div class="contacto__pregunta">      
+            <div class="formulario__item">      
             <input type="radio" name="ComoConoceLaMarca" id="ferias" value="ferias"/>En ferias
             </div>
             
-            <div class="contacto__pregunta">  
-            <p class="contacto__consulta">Ingresá tu consulta...</p>
+            <div class="formulario__item">  
+            <p class="formulario__detalles">Ingresá tu consulta...</p>
             </div>
 
             <textarea class="form-control"></textarea>
@@ -146,9 +156,8 @@
 <!--inicio footer-->
 <div class="container-fluid">
     <div class="row">
-   
     <footer class="footer">
-       
+
         <div class="footer__column">
             <ul class="footer__column__list">
                 <li class="footer__column__item"><a href="envíos.html"><img src="media/truck.png" alt="envios"><p class="footer__column__list footer__column__list--oculto">Envíos</p></a></li>
@@ -169,20 +178,18 @@
 
         <div class="footer__column">
             <ul class="footer__column__list">
-                <li class="footer__column__item"><a href="mapa.html"><img src="media/lup.png" alt="faqs"><p class="footer__column__list footer__column__list--oculto">Navegación</p></a></li>
+                <li class="footer__column__item"><a href="mapa.html"><img src="media/lup.png" alt="map"><p class="footer__column__list footer__column__list--oculto">Navegación</p></a></li>
             </ul>
         </div>
-      
+
     </footer>
-    
     </div>
 </div>
 <!--fin footer-->
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>      
 
 </body>
 

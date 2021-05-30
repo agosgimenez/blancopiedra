@@ -16,85 +16,105 @@
 <body>
 
 <!--inicio de header y menu-->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-xs col-sm col-md col-lg">
-            <header class="header">
+<div class="container-fluid">
+    <div class="row">
+        <header>
+            <nav class="navbar navbar-light colorGris justify-content-between navbar-expand-lg">
+
+                <a href="index.html" class="logo"><img src="media/blanco-piedra.svg" alt="logo" class="navbar-brand justify-content-start"/></a>
     
-                    <a href="index.html"><img src="media/blanco-piedra.svg" alt="logo" class="header__img__logo"/></a>
+                    <button class="navbar-toggler justify-content-end" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
     
-                <nav class="navegacion"> <!--MENU-->     
-              
-                    <ul class="menu">
-                        <li><a href="productos.html">Productos</a>  <!--LISTA Y SECCIONES-->
-                            <ul class="subMenu">
-                                <li><a href="vajilla.html">vajilla</a></li>
-                                <li><a href="deco_objetos.html">deco</a></li>
-                            </ul>      
-                       
-                        <li><a href="precios.html">Precios y Medidas</a></li>  <!--TABLA-->  
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
     
-                        <li><a href="encargospersonalizados.html">Encargos personalizados</a></li> <!--FORMULARIO-->
+                            <div class="navbar-nav text-center">
+
+                                <a class= "nav-item nav-link" href="sobreblancopiedra.html">Sobre BP</a>
+                            
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Productos
+                                    </a>
+                                    <div class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
+                                      <a class="dropdown-item" href="vajilla.html">Vajilla</a>
+                                      <a class="dropdown-item" href="deco_objetos.html">Deco</a>
+                                      <a class="dropdown-item" href="productos.html">Diseños</a>  
+                                      <a class="dropdown-item" href="precios.html">Precios</a>
+                                    </div>
+                                </li>   
+                                
+                                <a class= "nav-item nav-link" href="encargospersonalizados.html">Encargos</a>
     
-                        <li><a href="sobreblancopiedra.html">Sobre BLANCO PIEDRA</a></li> <!--PARRAFO Y FOTO-->
-    
-                        <li><a href="contacto.html">Contacto</a></li> <!--FORMULARIO-->
-                    </ul>      
-                  
-                </nav>
-            </header>
-            </div>
-        </div>
+                                <a class= "nav-item nav-link" href="contacto.html">Contacto</a>
+
+                            </div>
+
+                    </div>           
+            </nav>          
+        </header> 
     </div>
+</div>
 <!--fin de header y menu-->  
 
 <!--inicio pagina vajilla-->
-<section class="section1">
-    <h1>•SETS DE VAJILLA•</h1>
-</section>
+<section class="container-fluid">
 
-<section class="section2">
-    <p>Todas las piezas de vajilla son pensadas para el uso práctico 
-    cotidiano, siendo <em>cómodas de manipular y con variación de tamaños.</em>
-    Aptas para microondas y  resistentes. </p>
-</section>
+    <div class="row justify-content-center section1">
 
-<section class="container sectionGaleria">
+        <h1>•SETS DE VAJILLA•</h1>
+
+    </div>    
+
+    <div class="row justify-content-center section3">
+
+        <div class="col-sm col-md-8 col-lg-8">
+
+        <p>Todas las piezas de vajilla son pensadas para el uso práctico 
+        cotidiano, siendo <em>cómodas de manipular y con variación de tamaños.</em>
+        Aptas para microondas y  resistentes. </p>
+
+        </div>
+
+    </div>
+
+<div class="container-fluid sectionGaleria">
     <div class="row justify-content-center">
 
         <div class="card galeria__card1">
             <h3 class="card-header">TAZAS</h3>
                 <div class="card-body">
-                    <h4 class="card-title">originales!</h4>
-                    <p class="card-text"> Disponibles en 3 medidas: taza, tacita y tazón. Elegí la que mejor se adapte!</p>
-                    <a href="vajilla_tazas.html" class="btn btn-info">quiero!</a>
+                    <h4 class="card-title">¡Originales!</h4>
+                    <p class="card-text"> Disponibles en 3 medidas: taza, tacita y tazón. ¡Elegí la que mejor se adapte!</p>
+                    <a href="vajilla_tazas.html" class="btn btn-info">¡Quiero!</a>
                 </div>
         </div>
    
         <div class="card galeria__card1" >
             <h3 class="card-header">VASOS</h3>
                 <div class="card-body">
-                    <h4 class="card-title">Súper prácticos!</h4>
+                    <h4 class="card-title">¡Súper prácticos!</h4>
                     <p class="card-text">Diseñados con formato de encaje para poder guardarlos fácilmente.</p>
-                    <a href="vajilla_vasos.html" class="btn btn-info">quiero!</a>
+                    <a href="vajilla_vasos.html" class="btn btn-info">¡Quiero!</a>
                 </div>
         </div>
 
         <div class="card galeria__card1">
-            <h3 class="card-header">MATES <span class="badge badge-pill off badge">sale off!</span></h3>
+            <h3 class="card-header">MATES <span class="badge badge-pill off badge">¡Sale off!</span></h3>
                 <div class="card-body">
-                    <h4 class="card-title">No pueden faltar!</h4>
+                    <h4 class="card-title">¡No pueden faltar!</h4>
                     <p class="card-text">Porque nunca se tiene suficientes mates... hay uno para cada ocasión!</p>
-                    <a href="vajilla_mates.html" class="btn btn-info">quiero!</a>
+                    <a href="vajilla_mates.html" class="btn btn-info">¡Quiero!</a>
                 </div>
         </div>
 
         <div class="card galeria__card1">
             <h3 class="card-header">BOWLS</h3>
                 <div class="card-body">
-                    <h4 class="card-title">Los preferidos!</h4>
+                    <h4 class="card-title">¡Los preferidos!</h4>
                     <p class="card-text">Tienen la medida justa para postres, picadas y mucho más!</p>
-                    <a href="vajilla_bowls.html" class="btn btn-info">quiero!</a>
+                    <a href="vajilla_bowls.html" class="btn btn-info">¡Quiero!</a>
             </div>
         </div>
     </div>
@@ -103,20 +123,20 @@
         <div class="card galeria__card2">
             <h3 class="card-header">PLATOS</h3>
                 <div class="card-body">
-                    <h4 class="card-title">Diseños originales!</h4>
+                    <h4 class="card-title">¡Diseños originales!</h4>
                     <p class="card-text">Disponibles en 2 medidas: grande y chico.</p>
-                    <a href="vajilla_platos.html" class="btn btn-info">quiero!</a>
+                    <a href="vajilla_platos.html" class="btn btn-info">¡Quiero!</a>
                 </div>
         </div>
     </div>
     
     <div class="row justify-content-center">
         <div class="card galeria__card2">
-            <h3 class="card-header">BANDEJAS<span class="badge badge-pill nuevo badge">nuevo!</span></h3>
+            <h3 class="card-header">BANDEJAS<span class="badge badge-pill nuevo badge">¡Nuevo!</span></h3>
                 <div class="card-body">
-                    <h4 class="card-title">Súper prácticas!</h4>
-                    <p class="card-text">Ideales para servir picoteos dulces o salados!</p>
-                    <a href="vajilla_bandejas.html" class="btn btn-info">quiero!</a>
+                    <h4 class="card-title">¡Súper prácticas!</h4>
+                    <p class="card-text">Ideales para servir picoteos dulces o salados.</p>
+                    <a href="vajilla_bandejas.html" class="btn btn-info">¡Quiero!</a>
                 </div>
         </div>
     </div>    
@@ -125,13 +145,15 @@
         <div class="card galeria__card2">
             <h3 class="card-header">SETS</h3>
                 <div class="card-body">
-                    <h4 class="card-title">Armá el juego completo!</h4>
+                    <h4 class="card-title">¡Armá el juego completo!</h4>
                     <p class="card-text">4 opciones de sets o podés solicitarlo especialmente a medida.</p>
-                    <a href="vajilla_sets.html" class="btn btn-info">quiero!</a>
-                    <a href="encargospersonalizados.html" class="btn btn-info">set a pedido!</a>
+                    <a href="vajilla_sets.html" class="btn btn-info">¡Quiero!</a>
+                    <a href="encargospersonalizados.html" class="btn btn-info">¡Set a pedido!</a>
                 </div>
         </div>
     </div>
+</div>
+
 </section>
 <!--fin pagina vajilla-->
 
@@ -171,9 +193,9 @@
 </div>
 <!--fin footer-->
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>      
 
 </body>
 </html>
