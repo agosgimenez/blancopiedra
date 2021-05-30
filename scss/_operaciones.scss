@@ -148,12 +148,27 @@ $ingreso: true;
 
 .card-title { 
             @include fondoOscuro;
+            padding: 5px;
         }
+
+@media only screen and (min-width:768px) {
+
+    .card-title { 
+                 font-size: 18px;
+            }
+
+}
 
 .card-text {
             font-size: 14px;
             margin: 0px;
-            padding: $espacio10;
+}
+
+@media only screen and (min-width:768px) {
+
+    .card-text {
+                font-size: 16px;
+      }
 }
 
 .btn {

@@ -353,6 +353,9 @@ td {
             color:$blanco;
             margin:$espacio30;
             text-align: center;
+            -webkit-box-shadow: 8px 8px 8px 0px $grisMedio;
+            -moz-box-shadow: 8px 8px 8px 0px $grisMedio;
+            box-shadow: 8px 8px 8px 0px $grisMedio;
     }   
 
 @media only screen and (min-width:768px) {

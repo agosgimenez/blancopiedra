@@ -330,6 +330,9 @@ main {
                 list-style-type:disc;
                 list-style-position:inside;
                 line-height: $espacio10;
+                -webkit-box-shadow: 0px 0px 8px 8px $verdeAqua;
+                -moz-box-shadow: 0px 0px 8px 8px $verdeAqua;
+                box-shadow: 0px 0px 8px 8px $verdeAqua;
             }
 
 .envios__precio {
@@ -378,7 +381,10 @@ main {
                    background-color: $verdeOscuro;
                    color:$blanco;
                    padding: $espacio20;
-                }
+                   -webkit-box-shadow: 8px 8px 8px 4px $grisMedio;
+                   -moz-box-shadow: 8px 8px 8px 4px $grisMedio;
+                   box-shadow: 8px 8px 8px 4px $grisMedio;
+            }
 
 .faqs__foto1 {
               width:300px;
@@ -461,6 +467,9 @@ main {
           background-color: $grisMedio; 
           color: $blanco;
           padding: $espacio30;
+          -webkit-box-shadow: 0px 0px 8px 0px $grisOscuro;
+          -moz-box-shadow: 0px 0px 8px 0px $grisOscuro;
+          box-shadow: 0px 0px 8px 0px $grisOscuro;
         }
 
 .sobreBP__destacado {
@@ -520,19 +529,28 @@ main {
                 width:300px;
                 height: 280px;
                 margin: $espacio30;
+                -webkit-box-shadow: 0px 0px 8px 6px $grisMedio;
+                -moz-box-shadow: 0px 0px 8px 6px $grisMedio;
+                box-shadow: 0px 0px 8px 6px $grisMedio;
             }
 
 .galeria__card2 {
                 width: 300px;
                 height: 280px;
                 margin: 50px;
+                -webkit-box-shadow: 0px 0px 8px 6px $grisMedio;
+                -moz-box-shadow: 0px 0px 8px 6px $grisMedio;
+                box-shadow: 0px 0px 8px 6px $grisMedio;
             }
 
 .galeria__card3 {
                 width: 350px;
                 height: 350px;
                 margin: $espacio30;
-                transition: all 1s; 
+                transition: all 1s;
+                -webkit-box-shadow: 0px 0px 8px 6px $grisMedio;
+                -moz-box-shadow: 0px 0px 8px 6px $grisMedio;
+                box-shadow: 0px 0px 8px 6px $grisMedio;
             }
 
 .galeria__card3:hover {
